@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 // import InstagramIcon from "@material-ui/icons/Instagram"
 // import MailOutlineIcon from "@material-ui/icons/MailOutline"
 // import LinkedInIcon from "@material-ui/icons/LinkedIn"
@@ -6,12 +7,21 @@ import React from "react"
 import footerStyles from "./footer.module.scss"
 
 const Footer = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    site {
+      siteMetadata {
+        author
+      }
+    }
+  }
+`)
   return (
     <footer>
       <div className={footerStyles.content}>
         © {new Date().getFullYear()}, by
         {` `}
-        Pau Larrea Llopis
+        {data.site.siteMetadata.author}
         <div className={footerStyles.icons} >
           <div>
             <a href="mailto:aperacaularuiz@gmail.com" target="blank">
