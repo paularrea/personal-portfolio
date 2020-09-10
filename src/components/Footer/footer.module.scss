@@ -1,7 +1,26 @@
+.container{
+    width: 100%;
+    padding: 2rem;
+    background-color:whitesmoke;
+    color: grey;
+    margin-top: 2rem;
+}
 .content{
+    width: 70vw;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    background-color:whitesmoke;
+    color: grey
 }
 .icons{
     display: flex;
+    width: 20vw;
+    justify-content: space-between;
+
+}
+
+a{
+    color: gray;
+    text-decoration:none;
 }

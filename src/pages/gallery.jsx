@@ -68,6 +68,7 @@ const Gallery = (props) => {
         ))}
       </Masonry>
       <Dialog
+      className={styles.dialog}
         open={visible}
         onClose={onClose}
         aria-labelledby="alert-dialog-title"

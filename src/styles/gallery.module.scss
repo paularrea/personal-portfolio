@@ -9,7 +9,7 @@
     display: -ms-flexbox; /* Not needed if autoprefixing */
     display: flex;
     margin-left: -30px; /* gutter size offset */
-    width: 100%;
+    width: 98vw;
     // img {
     //     -webkit-transition: all 0.75s ease-out;
     //     -moz-transition: all 0.75s ease-out;
@@ -34,6 +34,11 @@ margin-bottom: 30px;
 .img {
     max-height: 90vh;
     width: 100%;
-    background: transparent;
+}
+
+.dialog{
+    width: 100vw !important;
+    height: auto !important;
     margin: 0;
+    background-color: rgb(255, 255, 255);
 }

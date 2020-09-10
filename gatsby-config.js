@@ -1,4 +1,4 @@
-module.exports = {
+ module.exports = {
   siteMetadata: {
     title: `Requesens`,
     description: `Web del artista Pau Requesens, donde comparte todas sus creaciones`,
@@ -10,8 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images/gallery`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -28,5 +28,6 @@ module.exports = {
         icon: `src/images/favicon.jpg`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-transformer-remark`,
   ],
 }
