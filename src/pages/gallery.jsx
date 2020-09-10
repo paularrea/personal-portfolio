@@ -19,18 +19,19 @@ const Gallery = (props) => {
 
   const { allImageSharp: { edges: images } } = useStaticQuery(
     graphql`
-      query {
-        allImageSharp {
-          edges {
-            node {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+    query {
+      allImageSharp {
+        edges {
+          node {
+            id
+            fluid{
+              ...GatsbyImageSharpFluid
             }
           }
         }
       }
-    `
+    }
+  `
   )
 
   const sortedImages = images.sort((a, b) => {
@@ -48,10 +49,10 @@ const Gallery = (props) => {
   const onOpen = (url) => {
     setVisible(true)
     setClickedUrl(url)
-
+  }
   return (
       <Layout>
-        <h1>Gallery</h1>
+        <div className={styles.gallery_container}>
            <Masonry
         breakpointCols={breakpointColumnsObj}
         className={styles.my_masonry_grid}
@@ -75,8 +76,9 @@ const Gallery = (props) => {
         <img className={styles.img} alt="" src={clickedUrl} />
       </Dialog>
       <Link to="/">- Go back -</Link>
+      </div>
       </Layout>
   )
-}}
+}
 
 export default Gallery
