@@ -1,6 +1,16 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+import Masonry from "react-masonry-css"
+import styles from "../styles/gallery.module.scss"
+
+const breakpointColumnsObj = {
+  default: 4,
+  1100: 3,
+  700: 2,
+  500: 1,
+}
 
 const Contact = () => {
   const data = useStaticQuery(graphql`
@@ -11,8 +21,15 @@ const Contact = () => {
             frontmatter {
               title
               description
+              featuredImage {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
-            fields{
+            fields {
               slug
             }
           }
@@ -22,21 +39,28 @@ const Contact = () => {
   `)
 
   return (
-    <div>
-      <Layout>
-        <h1>Contact</h1>
-        {data.allMarkdownRemark.edges.map(edge => {
-          return (
-            <div>
-              <Link to={`/contact/${edge.node.fields.slug}`}>
-              <h2>{edge.node.frontmatter.title}</h2>
-              <p>{edge.node.frontmatter.description}</p>
-              </Link>
-            </div>
-          )
-        })}
-      </Layout>
+    <Layout>
+      <div className={styles.gallery_container}>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className={styles.my_masonry_grid}
+          columnClassName={styles.my_masonry_grid_column}
+        >
+          {data.allMarkdownRemark.edges.map(edge => {
+            const featuredImage = edge.node.frontmatter.featuredImage
+            return (
+              <div>
+                <Link to={`/contact/${edge.node.fields.slug}`}>
+                  {featuredImage && (
+                    <Img fluid={featuredImage.childImageSharp.fluid} />
+                  )}
+                </Link>
+              </div>
+            )
+          })}
+        </Masonry>
     </div>
+      </Layout>
   )
 }
 
