@@ -1,67 +1,80 @@
 import React from "react"
+import emailjs from "emailjs-com"
+import Swal from "sweetalert2"
+import styles from "../styles/contact.module.scss"
+import TextField from "@material-ui/core/TextField"
 import Layout from "../components/Layout/layout"
-import { Link, graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import Masonry from "react-masonry-css"
-import styles from "../styles/gallery.module.scss"
 
-const breakpointColumnsObj = {
-  default: 4,
-  1100: 3,
-  700: 2,
-  500: 1,
-}
+export default function Contact() {
+  function sendEmail(e) {
+    e.preventDefault()
 
-const Contact = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              title
-              description
-              featuredImage {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
+    emailjs
+      .sendForm("gmail", "requesens-portfolio", e.target, "user_sWXayM2Q5oM9pReV8U7as")
+      .then(res => {
+        // Email successfully sent alert
+        Swal.fire({
+          title: "Email Successfully Sent",
+          icon: "success",
+        })
+      })
+      // Email Failed to send Error alert
+      .catch(err => {
+        Swal.fire({
+          title: "Email Failed to Send",
+          icon: "error",
+        })
+        console.error("Email Error:", err)
+      })
+  }
 
   return (
     <Layout>
-      <div className={styles.gallery_container}>
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className={styles.my_masonry_grid}
-          columnClassName={styles.my_masonry_grid_column}
-        >
-          {data.allMarkdownRemark.edges.map(edge => {
-            const featuredImage = edge.node.frontmatter.featuredImage
-            return (
-              <div>
-                <Link to={`/contact/${edge.node.fields.slug}`}>
-                  {featuredImage && (
-                    <Img fluid={featuredImage.childImageSharp.fluid} />
-                  )}
-                </Link>
+      <div className={styles.email_container}>
+        <div className={styles.email_wrapper}>
+          <h1 className={styles.email_form_title}>Send me a message</h1>
+          <form className={styles.test_mailing} onSubmit={sendEmail}>
+            <br />
+            <div style={{ fontSize: "1.2rem" }}>
+              <div className={styles.name_email_wrapper}>
+                <TextField
+                  name="user_name"
+                  type="text"
+                  id="name"
+                  // onChange={this.nameChange}
+                  required
+                  className={styles.name_email_inputs}
+                  label="name"
+                />
+
+                <TextField
+                  name="user_email"
+                  type="text"
+                  // onChange={this.emailChange}
+                  required
+                  className={styles.name_email_inputs}
+                  id="email"
+                  label="email"
+                />
               </div>
-            )
-          })}
-        </Masonry>
-    </div>
-      </Layout>
+              <TextField
+                id="message"
+                name="message"
+                // onChange={this.messageChange}
+                placeholder="Put your message here"
+                required
+                className={styles.message_inputs}
+                label="message"
+                multiline
+                rowsMax={4}
+              />
+            </div>
+            <div>
+              <input type="submit" value="submit" className={styles.btn_form} />
+            </div>
+          </form>
+        </div>
+      </div>
+    </Layout>
   )
 }
-
-export default Contact
