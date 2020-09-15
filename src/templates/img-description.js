@@ -2,21 +2,15 @@ import React from "react"
 import Layout from "../components/Layout/layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import styles from "./gallery.template.module.scss"
 
 const ImgDescription = props => {
   return (
     <Layout>
-      <div
-        style={{
-          width: "90vw",
-          margin: "0 auto",
-          display: "flex",
-          flexDirection: "row",
-        }}
-      >
-        <div style={{ width: "60vw" }}>
+      <div className={styles.container}>
+        <div>
           <Img
-            style={{ maxHeight: "90vh" }}
+            className={styles.img}
             fluid={
               props.data.markdownRemark.frontmatter.featuredImage
                 .childImageSharp.fluid
@@ -24,12 +18,10 @@ const ImgDescription = props => {
           />
         </div>
         <div
-          style={{ width: "30vw", margin: "2rem" }}
+          className={styles.description}
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
         ></div>
       </div>
-      {/* <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-      <p>{props.data.markdownRemark.frontmatter.description}</p> */}
     </Layout>
   )
 }

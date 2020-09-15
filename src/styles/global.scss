@@ -18,6 +18,8 @@ body {
     --btn-hover:#222;
     --active-btn:black;
 
+    --spinner:rgb(41, 41, 41);
+
     background-color: var(--bg);
   }
   
@@ -40,4 +42,6 @@ body {
     --btn:#c83a3a; 
     --btn-hover:whitesmoke;
     --active-btn:white;
+
+    --spinner:#c83a3a;
   }
