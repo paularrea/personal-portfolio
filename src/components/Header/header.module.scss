@@ -1,17 +1,18 @@
 @import '../../styles/variables.scss';
 
 .header{
-    padding: 1rem 0 3rem;
+    padding: 1rem 0;
     position: relative;
 }
 
 .title{
     color: var(--textTitle);
-    font-size: 4rem;
+    font-size: 7vw;
     letter-spacing: 1rem;
     text-decoration: none;
     display: flex;
     justify-content: center;
+    padding-bottom: 1rem ;
 }
 
 
@@ -43,5 +44,5 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1rem;
+    padding: 1rem 3rem;
 }

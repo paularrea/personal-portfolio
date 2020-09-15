@@ -69,17 +69,6 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <h1>
-          <Link
-            style={{
-              backgroundColor: "var(--bg)",
-            }}
-            className={headerStyles.title}
-            to="/"
-          >
-            {data.site.siteMetadata.title}
-          </Link>
-        </h1>
       </nav>
       <div className={headerStyles.uv}>
         <Uv />
