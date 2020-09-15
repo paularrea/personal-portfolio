@@ -2,7 +2,6 @@ import React from "react"
 import emailjs from "emailjs-com"
 import Swal from "sweetalert2"
 import styles from "../styles/contact.module.scss"
-import TextField from "@material-ui/core/TextField"
 import Layout from "../components/Layout/layout"
 
 export default function Contact() {
@@ -37,40 +36,42 @@ export default function Contact() {
             <br />
             <div style={{ fontSize: "1.2rem" }}>
               <div className={styles.name_email_wrapper}>
-                <TextField
+                <input
                   name="user_name"
                   type="text"
                   id="name"
                   // onChange={this.nameChange}
                   required
+                  placeholder="Name"
                   className={styles.name_email_inputs}
                   label="name"
                 />
 
-                <TextField
+                <input
                   name="user_email"
                   type="text"
                   // onChange={this.emailChange}
                   required
+                  placeholder="Email"
                   className={styles.name_email_inputs}
                   id="email"
                   label="email"
                 />
               </div>
-              <TextField
+              <input
                 id="message"
                 name="message"
                 // onChange={this.messageChange}
                 placeholder="Put your message here"
                 required
-                className={styles.message_inputs}
+                className={styles.message_input}
                 label="message"
                 multiline
                 rowsMax={4}
               />
             </div>
-            <div>
-              <input type="submit" value="submit" className={styles.btn_form} />
+            <div className={styles.btn_container}>
+              <button type="submit" value="submit" className={styles.btn_form}>Submit</button>
             </div>
           </form>
         </div>

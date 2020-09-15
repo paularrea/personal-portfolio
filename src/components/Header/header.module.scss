@@ -1,15 +1,19 @@
+@import '../../styles/variables.scss';
+
 .header{
     padding: 1rem 0 3rem;
+    position: relative;
 }
 
 .title{
-    color: black;
+    color: var(--textTitle);
     font-size: 4rem;
     letter-spacing: 1rem;
     text-decoration: none;
     display: flex;
     justify-content: center;
 }
+
 
 .nav-list{
     display: flex;
@@ -21,16 +25,23 @@
 }
 
 .nav-item {
-    color:#999999;
+    color: var(--btn);
     font-size: 0.9rem;
- 
     text-decoration: none !important;
 }
 
+
 .nav-item:hover {
-    color:rgb(41, 41, 41);
+    color:var(--btn-hover);
 }
 
 .active-nav-item {
-    color: black;
+    color: var(--active-btn);
+}
+
+.uv{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
 }

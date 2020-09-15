@@ -1,17 +1,16 @@
 .container{
     width: 100%;
     padding: 2rem;
-    background-color:whitesmoke;
-    color: grey;
-    margin-top: 2rem;
+    background-color:var(--bg-footer);
+    color: var(--textNormal);
 }
 .content{
     width: 70vw;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    background-color:whitesmoke;
-    color: grey
+    background-color:var(--bg-footer);
+    color: var(--textNormal)
 }
 .icons{
     display: flex;

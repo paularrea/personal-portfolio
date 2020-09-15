@@ -1,30 +1,42 @@
 /* email */
 
 .email_container{
-    width: 100vw;
+    width: 60vw;
     height: auto;
-    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    color: var(--textNormal);
+    background-color: var(--bg-container);
    }
    
    .email_wrapper{
-       width: 70vw !important;
+       width: 50vw !important;
        margin: 0 auto;
        padding: 5% 0;
    }
    
    .email_form_title{
-       padding-bottom: 5%;
-       font-size: 52px;
+       font-size: 2rem;
+       color: var(--textNormal);
    }
-   
+
    .name_email_inputs{
-       width: 48%;
-       padding: 3% 0 !important;
+       width: 21vw;
+       border: none;
+       padding: 1%;
+       margin-bottom: 5vh;
+       background-color: var(--bg-input);
+       color: var(--textNormal);
    }
    
    .message_input{
        width: 100%;
-       padding: 3% 0 !important;
+       padding: 1%;
+       border: none;
+       padding-bottom: 5%;
+       margin-bottom: 5vh;
+       background-color: var(--bg-input);
+       color: var(--textNormal);
    }
    
    .name_email_wrapper{
@@ -32,15 +44,20 @@
        justify-content: space-between;
        align-items: center;
    }
+
+   .btn_container{
+       display: flex;
+       justify-content: center;
+   }
    
    .btn_form{
        background-color: transparent;
-       border: 1px solid black !important ;
+       border: 1px solid var(--textNormal) !important ;
+       color:var(--textNormal);
        padding: 1vw 4vw;
-       margin-top: 3vh;
    }
    
    .btn_form:hover{
-       background-color: black;
-       color: whitesmoke;
+       background-color: var(--bg-btn-hover);
+       color: var(--color-btn-hover);
    }

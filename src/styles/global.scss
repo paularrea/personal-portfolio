@@ -1,0 +1,37 @@
+@import './variables';
+
+body {
+    --bg: white;
+    --bg-footer: whitesmoke;
+    --bg-container:whitesmoke;
+    --bg-input:white;
+    --bg-btn-hover:rgb(41, 41, 41);
+    --color-btn-hover:white;
+    
+    --textNormal: rgb(41, 41, 41);
+    --textTitle: rgb(70, 70, 70);
+   
+    --btn: #999999;
+    --btn-hover:#222;
+    --active-btn:black;
+
+    background-color: var(--bg);
+  }
+  
+  body.dark {
+    -webkit-font-smoothing: antialiased;
+  
+    --bg: rgb(41, 41, 41);
+    --bg-footer: rgb(61, 61, 61);
+    --bg-container:rgb(61, 61, 61);
+    --bg-input:rgb(93, 93, 93);
+    --bg-btn-hover:rgb(221, 221, 221);
+    --color-btn-hover:rgb(93, 93, 93);
+
+    --textNormal: rgb(221, 221, 221);
+    --textTitle: rgb(165, 165, 165);
+
+    --btn:#c83a3a; 
+    --btn-hover:whitesmoke;
+    --active-btn:white;
+  }

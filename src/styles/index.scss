@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import './variables.scss';
 
-$darkGrey: rgb(44, 44, 44);
+*{
+  color: $darkGrey;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family:'Noto Sans';
+}
+
 
 html, #root{
     width: 100vw;
     height: 100vh;
 }
 
-body{
-margin: 0;
+
+body {
+  margin: 0;
 }
 
-*{
-    color: $darkGrey;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-family:'Noto Sans';
-}
 

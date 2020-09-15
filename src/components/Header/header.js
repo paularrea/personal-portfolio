@@ -1,10 +1,9 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-
 import headerStyles from "./header.module.scss"
+import Uv from "../UvToggle/uv"
 
 const Header = () => {
-  
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -18,7 +17,12 @@ const Header = () => {
   return (
     <header className={headerStyles.header}>
       <nav>
-        <ul className={headerStyles.navList}>
+        <ul
+          className={headerStyles.navList}
+          style={{
+            backgroundColor: "var(--bg)",
+          }}
+        >
           <li>
             <Link
               className={headerStyles.navItem}
@@ -66,11 +70,20 @@ const Header = () => {
           </li>
         </ul>
         <h1>
-          <Link className={headerStyles.title} to="/">
+          <Link
+            style={{
+              backgroundColor: "var(--bg)",
+            }}
+            className={headerStyles.title}
+            to="/"
+          >
             {data.site.siteMetadata.title}
           </Link>
         </h1>
       </nav>
+      <div className={headerStyles.uv}>
+        <Uv />
+      </div>
     </header>
   )
 }

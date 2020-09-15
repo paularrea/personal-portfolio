@@ -67,6 +67,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

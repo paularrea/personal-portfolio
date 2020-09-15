@@ -18,8 +18,12 @@ const Footer = () => {
   `)
   return (
     <footer>
-      <div className={footerStyles.container}>
-        <div className={footerStyles.content}>
+      <div
+        className={footerStyles.container}
+      >
+        <div
+          className={footerStyles.content}
+        >
           © {new Date().getFullYear()}, by
           {` `}
           {data.site.siteMetadata.author}
