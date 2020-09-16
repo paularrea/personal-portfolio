@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import styles from "../styles/videos.module.scss"
 import Layout from "../components/Layout/layout"
 // import SEO from "../components/seo"
@@ -12,7 +11,6 @@ const videos33 = [
   "5DCk1i15s8Y",
   "8nyVAJhPAEs",
   "5sMrU6zA2kE",
-  "w0NcyiahpzI",
 ]
 
 const videosBefore33 = [
@@ -71,19 +69,23 @@ const Videos = props => {
             className={videoLoaded ? styles.hide : ""}
           />
         </div>
-          <div className={styles.video_grid}>
-            {videos33.map(id => (
-              <>
-                <YouTube
-                  videoId={id}
-                  className={`${styles.video_size} ${
-                    selected !== 1 ? styles.hide : ""
-                  }`}
-                  onReady={() => setVideoLoaded(true)}
-                />
-              </>
-            ))}
-          </div>
+        <div
+          className={`${styles.video_grid} ${
+            selected !== 1 ? styles.hide : ""
+          }`}
+        >
+          {videosBefore33.map(id => (
+            <>
+              <YouTube
+                videoId={id}
+                className={`${styles.video_size} ${
+                  selected !== 1 ? styles.hide : ""
+                }`}
+                onReady={() => setVideoLoaded(true)}
+              />
+            </>
+          ))}
+        </div>
 
         <div
           className={`${styles.loader_container} ${
@@ -100,8 +102,12 @@ const Videos = props => {
           />
         </div>
 
-        <div className={styles.video_grid}>
-          {videosBefore33.map(id => (
+        <div
+          className={`${styles.video_grid} ${
+            selected !== 2 ? styles.hide : ""
+          }`}
+        >
+          {videos33.map(id => (
             <>
               <YouTube
                 videoId={id}

@@ -74,8 +74,10 @@
     width: 90vw;
     max-width: 1200px;
     display: grid;
-    margin: 0 auto;
+    margin: auto;
     grid-gap: 1rem;
+    padding: 2rem 0;
+
 }
 
 .video_grid div{
@@ -86,10 +88,10 @@
     display: none !important;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 400px) {
     .video_size{
         width: 90vw;
-        height: 30vh;
+        height: 35vh;
     }
     .video_grid { grid-template-columns: repeat(1, 1fr); }
   }
