@@ -3,7 +3,6 @@ import emailjs from "emailjs-com"
 import Swal from "sweetalert2"
 import styles from "../styles/contact.module.scss"
 import Layout from "../components/Layout/layout"
-import Logo from "../components/Header/title"
 
 export default function Contact() {
   function sendEmail(e) {

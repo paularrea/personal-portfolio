@@ -12,6 +12,7 @@
     background-color: var(--create);
     color: var(--color-btn-hover);
     padding: 0 .5rem;
+    margin-right: .4rem;
 }
 
 .reach_me{
@@ -23,6 +24,8 @@
 .links_container{
 display: flex;
 }
+
+
 .links_container a{
     color:var(--textNormal);
 }
@@ -32,15 +35,14 @@ display: flex;
 
 .btn{
     background-color: transparent;
-    border: 1px solid var(--textNormal) !important ;
-    color:var(--textNormal);
+    border: 1px solid var(--textNormal);
     padding: 1vw 2vw;
     margin-right: 1rem;
     margin-top: 1rem;
   }
   
-  .btn:hover{
+  .btn:hover {
     background-color: var(--bg-btn-hover);
-    color: var(--color-btn-hover);
   }
+  
   

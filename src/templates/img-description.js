@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import styles from "./gallery.template.module.scss"
 import GitHubIcon from "@material-ui/icons/GitHub"
 
