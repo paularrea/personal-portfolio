@@ -1,8 +1,11 @@
 .container{
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 15vw;
+    padding-bottom: 5vh;
+}
+
+.container video{
+    width: 60vw;
     height: auto;
-    margin: 0 auto;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
 }

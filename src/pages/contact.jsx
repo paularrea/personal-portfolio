@@ -3,7 +3,7 @@ import emailjs from "emailjs-com"
 import Swal from "sweetalert2"
 import styles from "../styles/contact.module.scss"
 import Layout from "../components/Layout/layout"
-import Logo from "../components/Header/requesens"
+import Logo from "../components/Header/title"
 
 export default function Contact() {
   function sendEmail(e) {
@@ -30,7 +30,6 @@ export default function Contact() {
 
   return (
     <Layout>
-      <Logo/>
       <div className={styles.email_container}>
         <div className={styles.email_wrapper}>
           <h1 className={styles.email_form_title}>Send me a message</h1>
@@ -73,7 +72,7 @@ export default function Contact() {
               />
             </div>
             <div className={styles.btn_container}>
-              <button type="submit" value="submit" className={styles.btn_form}>Submit</button>
+              <button type="submit" value="submit" className={styles.btn}>Submit</button>
             </div>
           </form>
         </div>

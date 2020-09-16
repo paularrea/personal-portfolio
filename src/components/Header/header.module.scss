@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+
 
 .header{
     padding: 1rem 0;
@@ -6,13 +6,15 @@
 }
 
 .title{
+    position: absolute;
+    background-color: transparent !important;
     color: var(--textTitle);
-    font-size: 7vw;
-    letter-spacing: 1rem;
+    font-size: 6vw;
+    letter-spacing: .5rem;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
     padding-bottom: 1rem ;
+    width: 78vw;
+    left: 10vw;
 }
 
 
@@ -21,7 +23,7 @@
     list-style-type: none;
     margin: 0 auto;
     padding-inline-start: 0;
-    max-width: 45%;
+    max-width: 30vw;
     justify-content: space-between;
 }
 

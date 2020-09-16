@@ -3,12 +3,13 @@ import Layout from "../components/Layout/layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./gallery.template.module.scss"
+import GitHubIcon from "@material-ui/icons/GitHub"
 
 const ImgDescription = props => {
   return (
     <Layout>
       <div className={styles.container}>
-        <div>
+        {/* <div>
           <Img
             className={styles.img}
             fluid={
@@ -16,7 +17,30 @@ const ImgDescription = props => {
                 .childImageSharp.fluid
             }
           />
+        </div> */}
+        <div className>
+          <div className>
+            <a
+              href={props.data.markdownRemark.frontmatter.title}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See website
+            </a>
+          </div>
+          <div className="project-links">
+            <a
+              href={props.data.markdownRemark.frontmatter.description}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon />
+            </a>
+          </div>
         </div>
+        {/* <div className="carousel-photo animated fadeInUp">
+          <CarouselGreenMove />
+        </div> */}
         <div
           className={styles.description}
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}

@@ -4,8 +4,8 @@ import surfVideo from "../../videos/JOSIE.mp4"
 
 function IntroVideo() {
   return (
+    <div className={videoStyle.container}>
     <video
-      className={videoStyle.container}
       id="background-video"
       loop
       autoPlay
@@ -15,6 +15,7 @@ function IntroVideo() {
       <source src={surfVideo} type="video/ogg" />
       Your browser does not support the video tag.
     </video>
+    </div>
   )
 }
 

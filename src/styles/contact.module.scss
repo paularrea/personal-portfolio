@@ -51,14 +51,15 @@
        justify-content: center;
    }
    
-   .btn_form{
-       background-color: transparent;
-       border: 1px solid var(--textNormal) !important ;
-       color:var(--textNormal);
-       padding: 1vw 4vw;
-   }
-   
-   .btn_form:hover{
-       background-color: var(--bg-btn-hover);
-       color: var(--color-btn-hover);
-   }
+   .btn{
+    background-color: transparent;
+    border: 1px solid var(--textNormal) !important ;
+    color:var(--textNormal);
+    padding: 1vw 4vw;
+  }
+  
+  .btn:hover{
+    background-color: var(--bg-btn-hover);
+    color: var(--color-btn-hover);
+  }
+  

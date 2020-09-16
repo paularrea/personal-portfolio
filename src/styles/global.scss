@@ -1,12 +1,12 @@
-@import './variables';
 
 body {
     --bg: white;
     --bg-footer: whitesmoke;
     --bg-container:whitesmoke;
     --bg-input:white;
-    --bg-btn-hover:rgb(41, 41, 41);
-    --color-btn-hover:white;
+    
+    --bg-btn-hover:rgb(0, 0, 0);
+    --color-btn-hover:whitesmoke;
 
     --switcher:whitesmoke;
     --switcher-track:rgb(41, 41, 41);
@@ -20,6 +20,8 @@ body {
 
     --spinner:rgb(41, 41, 41);
 
+    --create:#5083AF;
+
     background-color: var(--bg);
   }
   
@@ -30,13 +32,14 @@ body {
     --bg-footer: rgb(61, 61, 61);
     --bg-container:rgb(61, 61, 61);
     --bg-input:rgb(93, 93, 93);
-    --bg-btn-hover:rgb(221, 221, 221);
-    --color-btn-hover:rgb(93, 93, 93);
+
+    --bg-btn-hover:rgb(255, 255, 255);
+    --color-btn-hover:#222;
 
     --switcher:#c83a3a;
     --switcher-track:#c83a3ab9;
 
-    --textNormal: rgb(221, 221, 221);
+    --textNormal: rgb(255, 255, 255);
     --textTitle: rgb(165, 165, 165);
 
     --btn:#c83a3a; 
@@ -44,4 +47,6 @@ body {
     --active-btn:white;
 
     --spinner:#c83a3a;
+
+    --create:#c83a3a; 
   }

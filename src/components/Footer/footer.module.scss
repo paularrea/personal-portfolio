@@ -19,7 +19,7 @@
 
 }
 
-a{
-    color: gray;
+.container a{
+    color: var(--textNormal);
     text-decoration:none;
 }
