@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Fade from "react-reveal/Fade"
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../components/Layout/layout";
 
@@ -10,7 +11,9 @@ export default ({
 }) => {
   return (
     <Layout>
+      <Fade>
       <MDXRenderer>{body}</MDXRenderer>
+      </Fade>
     </Layout>
   );
 };

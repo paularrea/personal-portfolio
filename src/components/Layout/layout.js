@@ -1,6 +1,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Fade from "react-reveal/Fade"
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
 import '../../styles/index.scss'
@@ -13,7 +14,9 @@ const Layout = (props) => {
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
       <Header />
+      <Fade cascade delay={300} duration={1000}>
         <main className={layoutStyles.main_container}>{props.children}</main>
+      </Fade>
       </div>
       <Footer />
     </div>

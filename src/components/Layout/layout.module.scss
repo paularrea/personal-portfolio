@@ -14,3 +14,15 @@
 .main_container{
     padding: 1rem 5rem 3rem 5rem;
 }
+
+@media (max-width: 700px) {
+    .main_container{
+        padding: 1rem;
+    }
+  }
+
+@media (min-width: 700px) {
+    .main_container{
+        padding: 1rem 5rem 3rem 5rem;
+    }
+  }

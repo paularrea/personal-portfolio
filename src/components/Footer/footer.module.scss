@@ -4,19 +4,17 @@
     background-color:var(--bg-footer);
     color: var(--textNormal);
 }
+
 .content{
-    width: 70vw;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    align-items: center;
     background-color:var(--bg-footer);
     color: var(--textNormal)
 }
 .icons{
     display: flex;
-    width: 20vw;
     justify-content: space-between;
-
 }
 
 .container a{
@@ -30,4 +28,27 @@
   
   .normal_link:hover{
     font-weight: bolder;
+  }
+
+  @media (max-width: 700px) {
+    .content div{
+        font-size: 4vw;
+    }
+    .container a{
+        margin-right: 2vw;
+    }
+    
+  }
+
+@media (min-width: 700px) {
+    .content div{
+        font-size: 1rem;
+    }
+    .container{
+        padding: 1rem 6rem;
+    }
+    .icons{
+        width: 10vw;
+    }
+    
   }

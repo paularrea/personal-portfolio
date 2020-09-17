@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-// import InstagramIcon from "@material-ui/icons/Instagram"
-// import MailOutlineIcon from "@material-ui/icons/MailOutline"
-// import LinkedInIcon from "@material-ui/icons/LinkedIn"
+import LinkedInIcon from "@material-ui/icons/LinkedIn"
+import GitHubIcon from "@material-ui/icons/GitHub"
+import InstagramIcon from "@material-ui/icons/Instagram"
 
 import footerStyles from "./footer.module.scss"
 
@@ -18,32 +18,39 @@ const Footer = () => {
   `)
   return (
     <footer>
-      <div
-        className={footerStyles.container}
-      >
-        <div
-          className={footerStyles.content}
-        >
-          © {new Date().getFullYear()}, by
+      <div className={footerStyles.container}>
+        <div className={footerStyles.content}>
+          <div>
+          © {new Date().getFullYear()},<br/> by
           {` `}
           {data.site.siteMetadata.author}
+          </div>
           <div className={footerStyles.icons}>
             <div>
-              <a className={footerStyles.normal_link} href="mailto:aperacaularuiz@gmail.com" target="blank">
-                {/* <MailOutlineIcon /> */}Mail
-              </a>
-            </div>
-            <div>
-              <a className={footerStyles.normal_link} href="https://www.instagram.com/aperacaula" target="blank">
-                {/* <InstagramIcon /> */}Insta
-              </a>
-            </div>
-            <div>
-              <a className={footerStyles.normal_link}
-                href="https://www.linkedin.com/in/alex-peracaula-9b4b1b11a/"
+              <a
+                className={footerStyles.normal_link}
+                href="https://github.com/paularrea"
                 target="blank"
               >
-                {/* <LinkedInIcon /> */}linkedin
+                <GitHubIcon />
+              </a>
+            </div>
+            <div>
+              <a
+                className={footerStyles.normal_link}
+                href="https://www.instagram.com/paularrea"
+                target="blank"
+              >
+                <InstagramIcon />
+              </a>
+            </div>
+            <div>
+              <a
+                className={footerStyles.normal_link}
+                href="https://www.linkedin.com/in/pau-larrea/"
+                target="blank"
+              >
+                <LinkedInIcon />
               </a>
             </div>
           </div>
