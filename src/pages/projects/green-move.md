@@ -1,8 +1,11 @@
 ---
-title: https://greenmove-app.herokuapp.com/
+title: Green Move
+web: https://greenmove-app.herokuapp.com/
+github: https://github.com/paularrea/GreenMove-app
+tech: ReactJS · MongoDB · Express · NodeJS · Bootstrap · Mapbox
 date: 1
-description: https://github.com/paularrea/GreenMove-app
-featuredImage: ./1.jpg
+description:   Green Move is a platform to create, promote and join environmental and social projects. Always with the intention of changing the world for the better.
+featuredImage: ../../images/greenmove.jpg
 ---
 
 <!-- ![photo](./3.jpg)  -->

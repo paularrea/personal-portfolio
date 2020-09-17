@@ -29,17 +29,17 @@ const Footer = () => {
           {data.site.siteMetadata.author}
           <div className={footerStyles.icons}>
             <div>
-              <a href="mailto:aperacaularuiz@gmail.com" target="blank">
+              <a className={footerStyles.normal_link} href="mailto:aperacaularuiz@gmail.com" target="blank">
                 {/* <MailOutlineIcon /> */}Mail
               </a>
             </div>
             <div>
-              <a href="https://www.instagram.com/aperacaula" target="blank">
+              <a className={footerStyles.normal_link} href="https://www.instagram.com/aperacaula" target="blank">
                 {/* <InstagramIcon /> */}Insta
               </a>
             </div>
             <div>
-              <a
+              <a className={footerStyles.normal_link}
                 href="https://www.linkedin.com/in/alex-peracaula-9b4b1b11a/"
                 target="blank"
               >

@@ -1,8 +1,11 @@
 ---
-title: https://paularrea.github.io/Proyecto---pokemon/index.html
+title: Who's that Pokémon?
+web: https://paularrea.github.io/Proyecto---pokemon/index.html
+github: https://github.com/paularrea/Proyecto---pokemon
+tech: Vanilla JS
 date: 2020-04-01
-description: https://github.com/paularrea/Proyecto---pokemon
-featuredImage: ./2.jpg
+description:  Interactive game based on a regular feature of pokemon television episodes where the viwer guess the pokemon previusly shown as a dark silouette.
+featuredImage: ../../images/pokemon.jpg
 ---
 
 <!-- ![photo](./2.jpg) -->

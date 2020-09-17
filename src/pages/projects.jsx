@@ -6,20 +6,23 @@ import Masonry from "react-masonry-css"
 import styles from "../styles/gallery.module.scss"
 
 const breakpointColumnsObj = {
-  default: 4,
+  default: 3,
   1100: 3,
   700: 2,
   500: 1,
 }
 
-const Gallery = () => {
+const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
             frontmatter {
               title
+              web
+              github
+              tech
               description
               featuredImage {
                 childImageSharp {
@@ -29,9 +32,10 @@ const Gallery = () => {
                 }
               }
             }
-            fields {
+            fields{
               slug
             }
+            
           }
         }
       }
@@ -46,22 +50,33 @@ const Gallery = () => {
           className={styles.my_masonry_grid}
           columnClassName={styles.my_masonry_grid_column}
         >
-          {data.allMarkdownRemark.edges.map(edge => {
+          {data.allMdx.edges.map(edge => {
             const featuredImage = edge.node.frontmatter.featuredImage
             return (
               <div>
-                <Link to={`/gallery/${edge.node.fields.slug}`}>
+                <Link to={`${edge.node.fields.slug}`}>
                   {featuredImage && (
                     <Img fluid={featuredImage.childImageSharp.fluid} />
                   )}
+                </Link>
+                <div>
+                  <h1>{edge.node.frontmatter.title}</h1>
+                  <p>{edge.node.frontmatter.description}</p>
+                  <p>{edge.node.frontmatter.tech}</p>
+                </div>
+                <Link
+                  className={styles.normal_link}
+                  to={`${edge.node.fields.slug}`}
+                >
+                  Read more
                 </Link>
               </div>
             )
           })}
         </Masonry>
-    </div>
-      </Layout>
+      </div>
+    </Layout>
   )
 }
 
-export default Gallery
+export default Projects

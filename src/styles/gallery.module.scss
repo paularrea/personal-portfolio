@@ -10,7 +10,7 @@
     display: -ms-flexbox; /* Not needed if autoprefixing */
     display: flex;
     margin-left: -30px; /* gutter size offset */
-    width: 98vw;
+    width: 100%;
     // img {
     //     -webkit-transition: all 0.75s ease-out;
     //     -moz-transition: all 0.75s ease-out;
@@ -28,7 +28,7 @@ background-clip: padding-box;
 
 /* Style your items */
 .my_masonry_grid_column > div { /* change div to reference your elements you put in <Masonry> */
-background: grey;
+background: transparent;
 margin-bottom: 30px;
 }
 
@@ -37,9 +37,12 @@ margin-bottom: 30px;
     width: 100%;
 }
 
-.dialog{
-    width: 100vw !important;
-    height: auto !important;
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-}
+.normal_link{
+    color: var(--normal-link);
+    font-weight: bolder;
+    padding-bottom: .1rem;
+  }
+  
+  .normal_link:hover{
+    border-bottom: 1px solid var(--normal-link);
+  }

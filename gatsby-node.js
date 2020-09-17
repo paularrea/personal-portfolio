@@ -1,42 +1,45 @@
-const path = require("path")
+const { createFilePath } = require("gatsby-source-filesystem");
+const mdxTemplate = require.resolve("./src/templates/img-description.js");
 
-module.exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions
-
-  if (node.internal.type === "MarkdownRemark") {
-    const slug = path.basename(node.fileAbsolutePath, ".md")
-    createNodeField({
-      node,
-      name: "slug",
-      value: slug,
-    })
+exports.onCreatePage = ({
+  page,
+  actions: { createPage, deletePage },
+}) => {
+  const { frontmatter } = page.context;
+  if (frontmatter) {
+    deletePage(page);
+    createPage({
+      ...page,
+      component: mdxTemplate,
+      context: {
+        ...page.context,
+        slug: page.path,
+      },
+    });
   }
-}
+};
 
-module.exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  const descriptionTemplate = path.resolve("./src/templates/img-description.js")
-  const res = await graphql(`
-    query {
-      allMarkdownRemark {
-        edges {
-          node {
-            fields {
-              slug
-            }
-          }
-        }
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === "Mdx") {
+    const value = createFilePath({ node, getNode });
+    createNodeField({
+      name: "slug",
+      node,
+      value,
+    });
+  }
+};
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+
+  createTypes(`
+      type Mdx implements Node {
+          frontmatter: MdxFrontmatter!
       }
-    }
+      type MdxFrontmatter {
+          featuredImage: File @fileByRelativePath
+      }
   `)
-
-  res.data.allMarkdownRemark.edges.forEach((edge)=>{
-      createPage({
-          component: descriptionTemplate,
-          path: `/gallery/${edge.node.fields.slug}`,
-          context: {
-              slug: edge.node.fields.slug
-          }
-      })
-  })
 }

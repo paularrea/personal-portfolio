@@ -23,3 +23,11 @@
     color: var(--textNormal);
     text-decoration:none;
 }
+
+.normal_link{
+    color: var(--normal-link);
+  }
+  
+  .normal_link:hover{
+    font-weight: bolder;
+  }
