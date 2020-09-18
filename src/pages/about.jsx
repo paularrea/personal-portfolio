@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { useTransition, animated } from "react-spring"
 import Layout from "../components/Layout/layout"
 import RevealContact from "../components/Reveal/RevealContact"
-import imgAbout from "../images/profile.png"
 import style from "../styles/about.module.scss"
 
 const About = () => {
@@ -43,17 +42,17 @@ const About = () => {
   }, [items.length])
 
   return (
-      <Layout>
-        <div className={style.about_container}>
-          <div className={style.description}>
-            <p>
-              Hi I am Pau, a frontend developer passionate about building
-              beautiful and intuitive designs that improves people's lives.
-              While I'm not coding or pushing pixels, you'll find me surfing or
-              traveling around.
-            </p>
-          </div>
-        
+    <Layout>
+      <div className={style.about_container}>
+        <div className={style.description}>
+          <p>
+            Hi I am Pau, a frontend developer passionate about building
+            beautiful and intuitive designs that improves people's lives. While
+            I'm not coding or pushing pixels, you'll find me surfing or
+            traveling around.
+          </p>
+        </div>
+
         <RevealContact />
         <div className={style.change}>
           <p>My goal is to work...</p>
@@ -63,11 +62,9 @@ const About = () => {
             </animated.div>
           ))}
         </div>
-        <div className={style.img}>
-          {/* <img src={imgAbout} alt="" /> */}
-        </div>
-        </div>
-      </Layout>
+        <div className={style.img}></div>
+      </div>
+    </Layout>
   )
 }
 

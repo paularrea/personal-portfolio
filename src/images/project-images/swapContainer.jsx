@@ -5,16 +5,16 @@ function gmImg() {
   return (
     <dir className={style.container}>
       <h1 className={style.title}>
-        "You must be the change <br></br> you want to see in the world" - Gandhi
+        "You must be the change you want to see in the world" - Gandhi
       </h1>
       <div className={style.row}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/swapit%2Fsw1.png?alt=media&token=2117ea13-44cd-4bdb-945d-affc67fa0cc5"
-          alt="project image one"
+          alt="swapit project one"
         />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/swapit%2Fsw2.png?alt=media&token=c2ffa11a-560e-40a7-9fd7-59b876438350"
-          alt="project image two"
+          alt="swapit project two"
         />
       </div>
       <div className={style.description}>
@@ -36,7 +36,7 @@ function gmImg() {
       </div>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/swapit%2Fsw3.png?alt=media&token=27405190-91d7-40d2-9304-7303ce6ff167"
-        alt="project image three"
+        alt="swapit project three"
       />
     </dir>
   )

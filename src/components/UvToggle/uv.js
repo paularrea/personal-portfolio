@@ -10,7 +10,7 @@ function Uv() {
     <ThemeToggler
     >
       {({ theme, toggleTheme }) => (
-        <label className={style.uv_label}>
+        <div className={style.uv_label}>
           <Switch
             style={{color:'var(--switcher)'}}
             checked={theme === "dark"}
@@ -19,7 +19,7 @@ function Uv() {
             inputProps={{ "aria-label": "secondary checkbox" }}
           />
           Dark Mode
-        </label>
+        </div>
       )}
     </ThemeToggler>
   )

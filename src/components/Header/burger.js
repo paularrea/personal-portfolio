@@ -8,13 +8,13 @@ class Burger extends React.Component {
   }
  
   render () {
-    // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
+
     return (
       <Menu className='bm-menu' >
         <a id="home" className="menu-item" href="/">Home</a>
         <a id="projects" className="menu-item" href="/projects">Projects</a>
         <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/about" href="/contact">Contact</a>
+        <a id="contact" className="menu-item" href="/contact">Contact</a>
       </Menu>
     );
   }

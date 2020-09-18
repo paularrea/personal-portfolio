@@ -10,11 +10,11 @@ function gmImg() {
       <div className={style.row}>
         <img
             src='https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move1.png?alt=media&token=2a134d8c-97ba-4df6-a827-2ad4b28d386d'
-            alt="project image one"
+            alt="greenmove project one"
         />
         <img
             src='https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move2.png?alt=media&token=107f883e-a04c-48b8-9425-abb71223a33b'
-            alt="project image two"
+            alt="greenmove project two"
         />
       </div>
       <div className={style.description}>
@@ -33,7 +33,7 @@ function gmImg() {
       </div>
       <img
             src='https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move3.png?alt=media&token=107f883e-a04c-48b8-9425-abb71223a33b'
-            alt="project image three"
+            alt="greenmove project three"
       />
     </dir>
   )

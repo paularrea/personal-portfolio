@@ -10,11 +10,11 @@ function gmImg() {
       <div className={style.row}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/pokemon%2Fcarousel-pokemon1.png?alt=media&token=9ebe38bc-48aa-4854-a04a-511bf4365601"
-          alt="project image one"
+          alt="pokemon project one"
         />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/pokemon%2Fcarousel-pokemon2.png?alt=media&token=9ebe38bc-48aa-4854-a04a-511bf4365601"
-          alt="project image two"
+          alt="pokemon project two"
         />
       </div>
       <div className={style.description}>
