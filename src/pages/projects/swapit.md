@@ -1,5 +1,5 @@
 ---
-title: Swap it
+title: SWAP IT!
 web: https://swap-it-app.herokuapp.com/
 github: https://github.com/paularrea/swapit
 tech: ReactJS · MongoDB · Express · NodeJS · Bootstrap · Socket.io

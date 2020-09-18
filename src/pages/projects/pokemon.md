@@ -1,5 +1,5 @@
 ---
-title: Who's that Pokémon?
+title: WHO'S THAT POKÉMON?
 web: https://paularrea.github.io/Proyecto---pokemon/index.html
 github: https://github.com/paularrea/Proyecto---pokemon
 tech: Vanilla JS
