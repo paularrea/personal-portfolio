@@ -16,14 +16,15 @@
 }
 
 
-@media (max-width: 450px) {
-    .about_container{
-        height: 125vh;
-    }
-}
 @media (max-width: 330px) {
     .about_container{
         height: 160vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .about_container{
+        height: 130vh;
     }
 }
 
@@ -67,7 +68,7 @@
     .change{
         width: 40vw;
         height: 30vh;
-        padding-bottom: 400px;
+        padding-bottom: 590px;
     }
     .img{
         width: 45vw;
@@ -87,6 +88,6 @@
     }  
     .change{
         width: 45vw;
-        padding-bottom: 400px;
+        padding-bottom: 500px;
     }
 }
