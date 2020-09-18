@@ -1,6 +1,5 @@
 .container{
     width: 100%;
-    padding: 2rem;
     background-color:var(--bg-footer);
     color: var(--textNormal);
 }
@@ -36,6 +35,9 @@
     }
     .container a{
         margin-right: 2vw;
+    }
+    .container{
+        padding: 1rem 2rem;
     }
     
   }

@@ -63,13 +63,18 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+            <div className={headerStyles.uv}>
+              <Uv />
+            </div>
           </nav>
         ) : (
-          <Burger />
+          <div className={headerStyles.burger_container}>
+            <Burger />
+           
+              <Uv />
+        
+          </div>
         )}
-        <div className={headerStyles.uv}>
-          <Uv />
-        </div>
       </header>
     </div>
   )

@@ -7,6 +7,7 @@ body {
     
     --bg-btn-hover:rgb(0, 0, 0);
     --color-btn-hover:whitesmoke;
+    --bg-menu:whitesmoke;
 
     --switcher:whitesmoke;
     --switcher-track:rgb(41, 41, 41);
@@ -29,13 +30,14 @@ body {
   body.dark {
     -webkit-font-smoothing: antialiased;
   
-    --bg: rgb(41, 41, 41);
+    --bg: #181818;
     --bg-footer: rgb(61, 61, 61);
     --bg-container:rgb(61, 61, 61);
     --bg-input:rgb(93, 93, 93);
 
     --bg-btn-hover:rgb(255, 255, 255);
     --color-btn-hover:#222;
+    --bg-menu:black;
 
     --switcher:#c83a3a;
     --switcher-track:#c83a3ab9;

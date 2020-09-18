@@ -12,9 +12,9 @@ class Burger extends React.Component {
     return (
       <Menu className='bm-menu' >
         <a id="home" className="menu-item" href="/">Home</a>
+        <a id="projects" className="menu-item" href="/projects">Projects</a>
         <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+        <a id="contact" className="menu-item" href="/about" href="/contact">Contact</a>
       </Menu>
     );
   }

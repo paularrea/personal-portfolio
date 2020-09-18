@@ -9,7 +9,7 @@ export default function Contact() {
     e.preventDefault()
 
     emailjs
-      .sendForm("gmail", "requesens-portfolio", e.target, "user_sWXayM2Q5oM9pReV8U7as")
+      .sendForm("gmail", "pau-portfolio", e.target, "user_sWXayM2Q5oM9pReV8U7as")
       .then(res => {
         // Email successfully sent alert
         Swal.fire({
@@ -34,7 +34,7 @@ export default function Contact() {
           <h1 className={styles.email_form_title}>Send me a message</h1>
           <form className={styles.test_mailing} onSubmit={sendEmail}>
             <br />
-            <div style={{ fontSize: "1.2rem" }}>
+            <div style={{ fontSize: "1.2rem", height:"100%" }}>
               <div className={styles.name_email_wrapper}>
                 <input
                   name="user_name"
@@ -58,7 +58,7 @@ export default function Contact() {
                   label="email"
                 />
               </div>
-              <input
+              <textarea
                 id="message"
                 name="message"
                 // onChange={this.messageChange}
