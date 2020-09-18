@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
 import Uv from "../UvToggle/uv"
 import Burger from "./burger"
+import Media from "react-media"
 
 const Header = () => {
-
   return (
     <div>
       <header className={headerStyles.header}>
-        {window.innerWidth >= 800 ? (
+        <Media query={{ minWidth: 800 }}>
           <nav>
             <ul
               className={headerStyles.navList}
@@ -58,12 +58,13 @@ const Header = () => {
               <Uv />
             </div>
           </nav>
-        ) : (
+        </Media>
+        <Media query={{ maxWidth: 800 }}>
           <div className={headerStyles.burger_container}>
             <Burger />
-              <Uv />
+            <Uv />
           </div>
-        )}
+        </Media>
       </header>
     </div>
   )
