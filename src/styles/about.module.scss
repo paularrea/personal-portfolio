@@ -18,12 +18,12 @@
 
 @media (max-width: 330px) {
     .about_container{
-        height: 900px;
+        height: 160vh !important;
     }
 }
 @media (max-width: 450px) {
     .about_container{
-        height: 780px;
+        height: 119vh !important;
     }
 }
 
@@ -42,7 +42,6 @@
     .change{
         width: 85vw;
         height: 30vh;
-        padding-bottom: 80vw;
     }
     .img{
         width: 300px;

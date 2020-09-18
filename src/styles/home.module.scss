@@ -2,26 +2,26 @@
 
   @media (max-width: 450px) {
     .intro_text{
-     padding: 35vh 0 2vh 0;
+     padding: 65vw 0 2vw 0;
     }
   }
 
   @media (min-width: 450px) {
     .intro_text{
-      padding: 40vh 0 2vh 0;
+      padding: 70vw 0 2vw 0;
     }
   }
 
   @media (min-width: 500px) {
     .intro_text{
-      padding: 50vh 0 2vh 0;
+      padding: 80vw 0 2vw 0;
     }
     .intro_text h1{
       font-size: 4vw;
   }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
     .intro_text{
         width: 80vw;
        margin: 0 auto;
@@ -34,15 +34,30 @@
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 600px) {
     .intro_text{
-        width: 60vw;
+        width: 70vw;
        margin: 0 auto;
-       padding: 35vh 0 2vh 0;
+       padding: 75vw 0 0 0;
       }
     
     .intro_text h1{
         font-size: 1.5rem;
         line-height: 3rem;
     }
+  }
+
+  @media (min-width: 700px) {
+    .intro_text{
+       padding: 45vw 0 0 0;
+      }
+  }
+
+  @media (min-width: 950px) {
+    .intro_text{
+        width: 80vw;
+       margin: 0 auto;
+       padding: 35vw 0 2vw 0;
+      }
+    
   }

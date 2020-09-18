@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
-import IntroVideo from "../components/Video/introVideo.jsx"
+// import IntroVideo from "../components/Video/introVideo.jsx"
 import Logo from "../components/Header/title"
 import styles from "../styles/home.module.scss"
 
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Layout>
       <Logo />
-      <IntroVideo />
+      {/* <IntroVideo /> */}
       <div className={styles.intro_text}>
         <h1>
           My name is Pau Larrea, very nice to meet you! Please take a look
