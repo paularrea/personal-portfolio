@@ -24,6 +24,8 @@ body {
 
     --create:#5083AF;
 
+    --img-filter: grayscale(90%);
+
     background-color: var(--bg);
   }
   
@@ -53,4 +55,6 @@ body {
     --spinner:#c83a3a;
 
     --create:#c83a3a; 
+
+    --img-filter: grayscale(0%);
   }

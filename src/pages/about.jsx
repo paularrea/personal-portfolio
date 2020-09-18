@@ -43,7 +43,6 @@ const About = () => {
   }, [items.length])
 
   return (
-    <div>
       <Layout>
         <div className={style.about_container}>
           <div className={style.description}>
@@ -54,7 +53,7 @@ const About = () => {
               traveling around.
             </p>
           </div>
-        </div>
+        
         <RevealContact />
         <div className={style.change}>
           <p>My goal is to work...</p>
@@ -65,10 +64,10 @@ const About = () => {
           ))}
         </div>
         <div className={style.img}>
-          <img className={style.img} src={imgAbout} alt="" />
+          {/* <img src={imgAbout} alt="" /> */}
+        </div>
         </div>
       </Layout>
-    </div>
   )
 }
 

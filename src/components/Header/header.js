@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div>
       <header className={headerStyles.header}>
-        {window.innerWidth >= 500 ? (
+        {window.innerWidth >= 800 ? (
           <nav>
             <ul
               className={headerStyles.navList}
@@ -70,9 +70,7 @@ const Header = () => {
         ) : (
           <div className={headerStyles.burger_container}>
             <Burger />
-           
               <Uv />
-        
           </div>
         )}
       </header>

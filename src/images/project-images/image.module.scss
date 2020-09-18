@@ -2,6 +2,7 @@
 .container{
     margin: 0;
     padding: 0;
+    padding-bottom: 2rem;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,20 +10,7 @@
 }
 
 .title{
-    font-size: 4vw;
     margin: 0 auto;
-    padding: 1rem 0;
-}
-
-.description{
-padding: 2rem 0;
-    h1{
-        font-size: 2.5vw;
-    }
-    p{
-        font-size: 2vw;
-        font-weight: lighter;
-    }
 }
 
 .row{
@@ -41,3 +29,37 @@ padding: 2rem 0;
 width: 100%;
 
 }
+
+@media (max-width: 700px) {
+    .description{
+        padding: 2rem 1rem;
+            h1{
+                font-size: 7vw;
+            }
+            p{
+                font-size: 5vw;
+                font-weight: lighter;
+            }
+        }
+        .title{
+            font-size: 6vw;
+            padding: 1rem;
+        }
+  }
+
+@media (min-width: 700px) {
+    .description{
+        padding: 2rem 0;
+            h1{
+                font-size: 2vw;
+            }
+            p{
+                font-size: 1.3vw;
+                font-weight: lighter;
+            }
+        }
+        .title{
+            font-size: 4vw;
+            padding: 1rem 0;
+        }
+  }

@@ -18,7 +18,7 @@ function Uv() {
             name="checkedA"
             inputProps={{ "aria-label": "secondary checkbox" }}
           />
-          UV
+          Dark Mode
         </label>
       )}
     </ThemeToggler>

@@ -9,14 +9,8 @@
     position: absolute;
     background-color: transparent !important;
     color: var(--textTitle);
-    font-size: 6vw;
-    letter-spacing: .5rem;
     text-decoration: none;
-    padding-bottom: 1rem ;
-    width: 78vw;
-    left: 10vw;
 }
-
 
 .nav-list{
     display: flex;
@@ -56,21 +50,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 100vw;
+    position: fixed;
+    height: 13vh;
+    top: 0;
+    background-color: var(--bg);
+    z-index: 999;
 }
 
-.menu{
-    background-color: black;
-}
+@media (max-width: 700px) {
+    .title{
+        font-size: 8vw;
+        letter-spacing: .5rem;
+        padding-bottom: 1rem ;
+        width: 78vw;
+        left: 10vw;
+    }
+}   
 
-.bm-burger-bars {
-    background: blue;
+@media (min-width: 700px) {
+    .title{
+        font-size: 6vw;
+        letter-spacing: .5rem;
+        padding-bottom: 1rem ;
+        width: 78vw;
+        left: 10vw;
+    }
+    
   }
-
-.bm-overlay{
-    background-color: red;
-}
-
-.bm-burger-button{
-    background-color: yellowgreen !important;
-}

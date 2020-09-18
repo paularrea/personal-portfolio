@@ -1,11 +1,30 @@
-.container{
-    display: flex;
-    justify-content: center;
-    padding-top: 15vw;
-    padding-bottom: 5vh;
-}
 
-.container video{
-    width: 60vw;
-    height: auto;
-}
+
+@media (max-width: 700px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        padding-top: 15vw;
+        padding-bottom: 5vh;
+    }
+    
+    .container video{
+        width: 75vw;
+        height: auto;
+    }
+}   
+
+@media (min-width: 700px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        padding-top: 15vw;
+        padding-bottom: 5vh;
+    }
+    
+    .container video{
+        width: 60vw;
+        height: auto;
+    }
+    
+  }

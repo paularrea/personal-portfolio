@@ -1,9 +1,26 @@
-.intro_text{
-    width: 60vw;
-   margin: 0 auto;
+
+
+@media (max-width: 700px) {
+    .intro_text{
+        width: 80vw;
+       margin: 0 auto;
+      }
+    
+    .intro_text h1{
+        margin: 2rem 0;
+        font-size: 6vw;
+        line-height: 2rem;
+    }
   }
 
-.intro_text h1{
-    font-size: 1.5rem;
-    line-height: 3rem;
-}
+@media (min-width: 700px) {
+    .intro_text{
+        width: 60vw;
+       margin: 0 auto;
+      }
+    
+    .intro_text h1{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+  }
