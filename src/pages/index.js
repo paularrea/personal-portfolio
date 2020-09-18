@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
-import IntroVideo from "../components/Video/IntroVideo"
+import IntroVideo from "../components/Video/introVideo.jsx"
 import Logo from "../components/Header/title"
 import styles from "../styles/home.module.scss"
 
