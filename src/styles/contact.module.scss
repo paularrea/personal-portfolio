@@ -2,6 +2,7 @@
 
 .email_container{
     height: auto;
+    margin: 0 auto;
     margin-bottom: 5%;
     color: var(--textNormal);
     background-color: var(--bg-container);
@@ -53,7 +54,7 @@
   }
   
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     .email_container{
         width: 90vw;
     }
@@ -95,7 +96,7 @@
     }
   }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .email_container{
         width: 50vw;
         margin: 0 auto;

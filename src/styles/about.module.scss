@@ -1,8 +1,7 @@
 .about_container{
     position: relative;
     width: 100%;
-    height: 100%;
-    flex-grow: 1;
+    height: 85vh;
 }
 
 .change{
@@ -15,6 +14,17 @@
     position: absolute;
     z-index: -1;
     filter: var(--img-filter);
+}
+
+@media (max-width: 330px) {
+    .about_container{
+        height: 900px;
+    }
+}
+@media (max-width: 450px) {
+    .about_container{
+        height: 780px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -32,7 +42,7 @@
     .change{
         width: 85vw;
         height: 30vh;
-        padding-bottom: 450px;
+        padding-bottom: 80vw;
     }
     .img{
         width: 300px;
@@ -58,11 +68,11 @@
     .change{
         width: 40vw;
         height: 30vh;
-        padding-bottom: 600px;
+        padding-bottom: 400px;
     }
     .img{
-        width: 40vw;
-        height: 40vw;
+        width: 45vw;
+        height: 45vw;
         right: -10px;
         bottom: 0;
     }
@@ -71,9 +81,13 @@
 @media (min-width: 700px) and (max-width: 800px) {
     .about_container{
         padding-top: 2.5rem;
+        height: 85vh;
     }
     .description p{
         font-size: 1.5rem;
+    }  
+    .change{
+        width: 45vw;
+        padding-bottom: 400px;
     }
-    
 }

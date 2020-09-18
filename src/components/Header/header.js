@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div>
       <header className={headerStyles.header}>
-        <Media query={{ minWidth: 800 }}>
+        <Media query={{ minWidth: 950 }}>
           <nav>
             <ul
               className={headerStyles.navList}
@@ -59,7 +59,7 @@ const Header = () => {
             </div>
           </nav>
         </Media>
-        <Media query={{ maxWidth: 800 }}>
+        <Media query={{ maxWidth: 950 }}>
           <div className={headerStyles.burger_container}>
             <Burger />
             <Uv />

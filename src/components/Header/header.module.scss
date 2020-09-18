@@ -49,10 +49,9 @@
 .burger_container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100vw;
     position: fixed;
-    height: 13vh;
+    height: 17vw;
     top: 0;
     background-color: var(--bg);
     z-index: 999;
@@ -63,7 +62,7 @@
         font-size: 8vw;
         letter-spacing: .5rem;
         padding-bottom: 1rem ;
-        width: 78vw;
+        width: 80vw;
         left: 10vw;
     }
 }   
@@ -77,4 +76,17 @@
         left: 10vw;
     }
     
+  }
+
+  @media (min-width: 600px) and (max-width: 950px) {
+    .burger_container{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        position: fixed;
+        height: auto;
+        top: 0;
+        background-color: var(--bg);
+        z-index: 999;
+    }
   }
