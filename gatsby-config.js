@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Pau Larrea Llopis`,
     description: `Portfolio web de Pau Larrea`,
-    author: `Pau Larrea Llopis`,
+    author: `Pau Larrea`,
     siteUrl: "https://www.paularrea.com",
   },
   plugins: [

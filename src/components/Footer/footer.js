@@ -21,7 +21,7 @@ const Footer = () => {
       <div className={footerStyles.container}>
         <div className={footerStyles.content}>
           <div>
-          © {new Date().getFullYear()},<br/> by
+          © {new Date().getFullYear()}, by
           {` `}
           {data.site.siteMetadata.author}
           </div>

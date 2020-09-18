@@ -1,9 +1,8 @@
 .uv_label{
     color: var(--textNormal);
-    position: fixed;
     height: 30px;
-    right: 40px;
-    top: 36px;
+    right: 20px;
+    top: 16px;
     z-index: 999;     
 }
 
@@ -12,6 +11,7 @@
 @media (max-width: 700px) {
     .uv_label{
         font-size: 4vw;   
+        position: fixed;
     }
   }
 
