@@ -6,7 +6,7 @@ function gmImg() {
   return (
     <dir className={style.container}>
       <h1 className={style.title}>
-        "You must be the change you want to see in the world" - Gandhi
+        Swap it!
       </h1>
       <div className={style.container_icons}>
         <div>
@@ -42,12 +42,12 @@ function gmImg() {
         </p>
         <h1>Challenge and technologies</h1>
         <p>
-          The platform consists of a responsive MERN stack web application made
-          to put into practice acquired knowledge such as React Hooks,
-          implementing libraries such as Bootstrap, socket.io and UI material
-          components for the frontend. We have used NodeJS and Express to manage
-          the server side using Cloudinary for image storage and management and
-          MongoDB for storing user data. Deployed with heroku. pair programming.
+          The platform consists of a responsive <span className={style.bold}>MERN stack</span> web application made
+          to put into practice acquired knowledge such as <span className={style.bold}>React Hooks</span>,
+          implementing libraries such as <span className={style.bold}>Bootstrap, socket.io</span> and <span className={style.bold}> material UI </span>
+          components for the frontend. We have used <span className={style.bold}>NodeJS</span> and <span className={style.bold}>Express</span> to manage
+          the server side using <span className={style.bold}>Cloudinary</span> for image storage and management and
+          <span className={style.bold}> MongoDB</span> for storing user data. Deployed with <span className={style.bold}>heroku</span>. pair programming.
         </p>
       </div>
       <img

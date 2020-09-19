@@ -6,7 +6,7 @@ function gmImg() {
   return (
     <dir className={style.container}>
       <h1 className={style.title}>
-        "You must be the change <br></br> you want to see in the world" - Gandhi
+        Green Move app
       </h1>
       <div className={style.container_icons}>
         <div>
@@ -43,8 +43,10 @@ function gmImg() {
         </p>
         <h1>Challenge and technologies</h1>
         <p>
-          This was my first MERN stack project developed in one week working in
-          pair programming.
+          This was my first <span className={style.bold}>MERN stack</span> project developed in one week working in
+          pair programming. We have used <span className={style.bold}>NodeJS</span> and <span className={style.bold}>Express</span> to manage
+          the server side using <span className={style.bold}>Cloudinary</span> for image storage and management and 
+          <span className={style.bold}> MongoDB</span> for storing user data. Deployed with <span className={style.bold}>heroku</span>.
         </p>
       </div>
       <img
