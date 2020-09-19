@@ -9,7 +9,7 @@ const About = () => {
   const [items] = useState([
     {
       title:
-        "In a friendly non-competitive environment a with talented and humble people.",
+        "In a friendly non-competitive environment surrounded by talented and humble people.",
       id: 0,
     },
     {
