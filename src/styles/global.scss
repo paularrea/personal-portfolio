@@ -5,25 +5,25 @@ body {
     --bg-container:whitesmoke;
     --bg-input:white;
     
-    --bg-btn-hover:rgb(0, 0, 0);
+    --bg-btn-hover:#000000;
     --color-btn-hover:whitesmoke;
     --bg-menu:whitesmoke;
 
-    --switcher:whitesmoke;
-    --switcher-track:rgb(41, 41, 41);
+    --switcher:#0077B5;
+    --switcher-track:#0077B5;
     
-    --textNormal: rgb(41, 41, 41);
-    --textTitle: #464646;
-    --normal-link:black;
+    --textNormal: #333333;
+    --textTitle: #424242;
+    --normal-link:#000000;
    
-    --btn: #999999;
-    --btn-hover:#222;
-    --active-btn:black;
+    --btn: #0077B5;
+    --btn-hover:#333333;
+    --active-btn:#000000;
 
-    --spinner:rgb(41, 41, 41);
+    --spinner:#0077B5;
 
-    --create:#5083AF;
-    --change: #464646;
+    --create:#0077B5;
+    --change: #333333;
 
     --img-filter: grayscale(90%);
 
@@ -42,20 +42,20 @@ body {
     --color-btn-hover:#222;
     --bg-menu:black;
 
-    --switcher:#C81D25;
-    --switcher-track:#C81D25;
+    --switcher:#E50914;
+    --switcher-track:#E50914;
 
     --textNormal: #ffffff;
     --textTitle: #a5a5a5;
     --normal-link:white;
 
-    --btn:#C81D25; 
+    --btn:#E50914; 
     --btn-hover:whitesmoke;
     --active-btn:white;
 
-    --spinner:#C81D25;
+    --spinner:#E50914;
 
-    --create:#C81D25; 
+    --create:#E50914; 
     --change: #a5a5a5;
 
     --img-filter: grayscale(0%);
