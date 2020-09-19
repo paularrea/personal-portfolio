@@ -1,55 +1,39 @@
 
 
-  @media (max-width: 450px) {
-    .intro_text{
-     padding: 65vw 0 2vw 0;
-    }
-  }
 
-  @media (min-width: 450px) {
-    .intro_text{
-      padding: 70vw 0 2vw 0;
-    }
-  }
 
-  @media (min-width: 500px) {
-    .intro_text{
-      padding: 80vw 0 2vw 0;
-    }
-    .intro_text h1{
-      font-size: 4vw;
-  }
-  }
+
 
   @media (max-width: 600px) {
     .intro_text{
         width: 80vw;
        margin: 0 auto;
+       padding: 75vw 0 2vw 0;
       }
     
     .intro_text h1{
         margin: 2rem 0;
-        font-size: 6vw;
-        line-height: 2rem;
+        font-size: 4.5vw;
+        line-height: 1.8rem;
     }
   }
 
   @media (min-width: 600px) {
     .intro_text{
-        width: 70vw;
-       margin: 0 auto;
-       padding: 75vw 0 0 0;
-      }
+      width: 70vw;
+      margin: 0 auto;
+      padding: 75vw 0 0 0;
+    }
     
     .intro_text h1{
-        font-size: 1.5rem;
-        line-height: 3rem;
+      font-size: 1.5rem;
+      line-height: 3rem;
     }
   }
 
   @media (min-width: 700px) {
     .intro_text{
-       padding: 45vw 0 0 0;
+       padding: 65vw 0 0 0;
       }
   }
 

@@ -4,27 +4,35 @@
     
    
 }
-@media (max-width: 700px) {
+//mobile
+@media (max-width: 1000px) {
     .container{
         padding-top: 15vw;
         padding-bottom: 5vh;
-        top: 20vw;
-        right: 5vw;
+        top: 38vw;
+        right: 9vw;
     }
     
     .container video{
         width: 75vw;
         height: auto;
     }
-}   
+} 
 
+//ipad
 @media (min-width: 700px) {
     .container{
-        display: flex;
-        justify-content: center;
-        padding-top: 15vw;
         padding-bottom: 5vh;
-        top: 3vw;
+        top: 15vw;
+        right: 11vw;
+    }
+  }
+
+//desktop
+@media (min-width: 1000px) {
+    .container{
+        padding-bottom: 5vh;
+        top: 22vw;
         right: 20vw;
     }
     
