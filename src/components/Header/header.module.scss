@@ -96,3 +96,14 @@
         z-index: 999;
     }
   }
+
+  @media (min-width: 1200px) {
+    .title{
+        font-size: 6vw;
+        letter-spacing: .3rem;
+        padding-bottom: 1rem ;
+        width: 78vw;
+        left: 9vw;
+        top: 5vw;
+    }
+  }

@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
 import Uv from "../UvToggle/uv"
 import Burger from "./burger"
 import Media from "react-media"
+import TransitionLink from 'gatsby-plugin-transition-link'
 
 const Header = () => {
   return (
@@ -18,40 +18,52 @@ const Header = () => {
               }}
             >
               <li>
-                <Link
+                <TransitionLink
+                 entry={{
+                  delay: 0.6
+                }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/"
                 >
                   HOME
-                </Link>
+                </TransitionLink>
               </li>
               <li>
-                <Link
+                <TransitionLink
+                 entry={{
+                  delay: 0.6
+                }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/projects"
                 >
                   PROJECTS
-                </Link>
+                </TransitionLink>
               </li>
               <li>
-                <Link
+                <TransitionLink
+                 entry={{
+                  delay: 0.6
+                }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/about"
                 >
                   ABOUT
-                </Link>
+                </TransitionLink>
               </li>
               <li>
-                <Link
+                <TransitionLink
+                 entry={{
+                  delay: 0.6
+                }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/contact"
                 >
                   CONTACT
-                </Link>
+                </TransitionLink>
               </li>
             </ul>
             <div className={headerStyles.uv}>

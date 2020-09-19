@@ -12,7 +12,7 @@ const Home = () => {
       <div className={styles.intro_text}>
         <h1>
           My name is Pau Larrea, very nice to meet you! Please take a look
-          around. Here you will find a bit of myself and some of my personal
+          around. Here you can find a bit of myself and some of my personal
           projects.
         </h1>
       </div>

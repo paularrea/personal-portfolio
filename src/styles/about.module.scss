@@ -16,17 +16,54 @@
 }
 
 
-@media (max-width: 330px) {
+//iphone 6,7,8 Plus
+@media (max-width: 450px) and (max-height: 750px) {
     .about_container{
-        height: 160vh;
+        height: 110vh;
     }
 }
 
-@media (max-width: 450px) {
+//Pixel2 XL
+@media (max-width: 420px) and (max-height: 850px) {
+    .about_container{
+        height: 100vh;
+    }
+}
+//Pixel2
+@media (max-width: 420px) and (max-height: 750px) {
+    .about_container{
+        height: 110vh;
+    }
+}
+
+//iphone 6,7,8
+@media (max-width: 380px) and (max-height: 700px) {
+    .about_container{
+        height: 120vh;
+    }
+}
+
+//galaxy
+@media (max-width: 360px) and (max-height: 700px) {
     .about_container{
         height: 140vh;
     }
 }
+
+//galaxy
+@media (max-width: 360px) and (max-height: 600px) {
+    .about_container{
+        height: 165vh;
+    }
+}
+
+//iphoneX
+@media (max-width: 400px) and (min-height: 800px) {
+    .about_container{
+        height: 100vh;
+    }
+}
+
 
 @media (max-width: 800px) {
     .description p{
@@ -48,7 +85,7 @@
         width: 300px;
         height: 300px;
         bottom: 0;
-        right: 1vw;
+        right: 0vw;
     }
 }
 
@@ -81,7 +118,8 @@
 @media (min-width: 700px) and (max-width: 800px) {
     .about_container{
         padding-top: 2.5rem;
-        height: 85vh;
+        padding-left: 5vw;
+        height: 87vh;
     }
     .description p{
         font-size: 1.5rem;
@@ -89,5 +127,14 @@
     .change{
         width: 45vw;
         padding-bottom: 500px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .about_container{
+        height: 78vh;
+    }
+    .change{
+        padding-bottom: 0px;
     }
 }
