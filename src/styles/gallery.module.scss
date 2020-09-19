@@ -46,3 +46,10 @@ margin-bottom: 30px;
   .normal_link:hover{
     border-bottom: 1px solid var(--normal-link);
   }
+
+  .project_info h1{
+      color: var(--btn);
+  }
+  .project_info{
+      margin-top: 2vw;
+  }

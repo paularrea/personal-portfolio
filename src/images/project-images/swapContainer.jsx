@@ -1,5 +1,6 @@
 import React from "react"
 import style from "./image.module.scss"
+import GitHubIcon from "@material-ui/icons/GitHub"
 
 function gmImg() {
   return (
@@ -7,6 +8,21 @@ function gmImg() {
       <h1 className={style.title}>
         "You must be the change you want to see in the world" - Gandhi
       </h1>
+      <div className={style.container_icons}>
+        <div>
+          <a href="https://swap-it-app.herokuapp.com/" target="blank">
+            Visit site
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/paularrea/swapit"
+            target="blank"
+          >
+            <GitHubIcon />
+          </a>
+        </div>
+      </div>
       <div className={style.row}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/swapit%2Fsw1.png?alt=media&token=2117ea13-44cd-4bdb-945d-affc67fa0cc5"

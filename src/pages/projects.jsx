@@ -59,7 +59,7 @@ const Projects = () => {
                     <Img fluid={featuredImage.childImageSharp.fluid} />
                   )}
                 </Link>
-                <div>
+                <div className={styles.project_info}>
                   <h1>{edge.node.frontmatter.title}</h1>
                   <p>{edge.node.frontmatter.description}</p>
                   <p>{edge.node.frontmatter.tech}</p>

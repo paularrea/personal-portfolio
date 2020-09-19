@@ -20,7 +20,7 @@ const Header = () => {
               <li>
                 <TransitionLink
                  entry={{
-                  delay: 0.6
+                  delay: 0.3
                 }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
@@ -32,7 +32,7 @@ const Header = () => {
               <li>
                 <TransitionLink
                  entry={{
-                  delay: 0.6
+                  delay: 0.3
                 }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
@@ -44,7 +44,7 @@ const Header = () => {
               <li>
                 <TransitionLink
                  entry={{
-                  delay: 0.6
+                  delay: 0.3
                 }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
@@ -56,7 +56,7 @@ const Header = () => {
               <li>
                 <TransitionLink
                  entry={{
-                  delay: 0.6
+                  delay: 0.3
                 }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}

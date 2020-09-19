@@ -31,7 +31,7 @@ export default function Contact() {
     <Layout>
       <div className={styles.email_container}>
         <div className={styles.email_wrapper}>
-          <h1 className={styles.email_form_title}>Send me a message</h1>
+          <h1 className={styles.email_form_title}>SEND ME A MESSAGE</h1>
           <form className={styles.test_mailing} onSubmit={sendEmail}>
             <br />
             <div style={{ fontSize: "1.2rem", height:"100%" }}>

@@ -13,7 +13,7 @@ class Burger extends React.Component {
       <Menu className="bm-menu">
         <TransitionLink
           entry={{
-            delay: 0.6,
+            delay: 0.3,
           }}
           to="/"
           id="home"
@@ -23,7 +23,7 @@ class Burger extends React.Component {
         </TransitionLink>
         <TransitionLink
           entry={{
-            delay: 0.6,
+            delay: 0.3,
           }}
           to="/projects"
           id="projects"
@@ -33,7 +33,7 @@ class Burger extends React.Component {
         </TransitionLink>
         <TransitionLink
           entry={{
-            delay: 0.6,
+            delay: 0.3,
           }}
           to="/about"
           id="about"
@@ -43,7 +43,7 @@ class Burger extends React.Component {
         </TransitionLink>
         <TransitionLink
           entry={{
-            delay: 0.6,
+            delay: 0.3,
           }}
           to="/contact"
           id="contact"

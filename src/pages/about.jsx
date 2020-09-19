@@ -9,16 +9,16 @@ const About = () => {
   const [items] = useState([
     {
       title:
-        "in a friendly non-competitive environment a with talented and humble people.",
+        "In a friendly non-competitive environment a with talented and humble people.",
       id: 0,
     },
     {
       title:
-        "in a company with strong values, always taking into account to grow sustainably and focused in helping its workers to unleash their potential.",
+        "In a company with strong values, always taking into account to grow sustainably and focused in helping its workers to unleash their potential.",
       id: 1,
     },
     {
-      title: "on projects with which at the end of the day I can be proud of.",
+      title: "On projects with which at the end of the day I can be proud of.",
       id: 2,
     },
   ])
@@ -37,7 +37,7 @@ const About = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(state => (state + 1) % items.length)
-    }, 5000)
+    }, 4000)
     return () => clearInterval(interval)
   }, [items.length])
 
@@ -55,10 +55,10 @@ const About = () => {
 
         <RevealContact />
         <div className={style.change}>
-          <p>My goal is to work...</p>
+          <p>My goal is to work ...</p>
           {fadingTextPropsTransition.map(({ item, key }) => (
-            <animated.div key={key}>
-              <p>{item.title}</p>
+            <animated.div style={{fontStyle:"italic"}} key={key}>
+              <p>" {item.title} "</p>
             </animated.div>
           ))}
         </div>

@@ -1,5 +1,6 @@
 import React from "react"
 import style from "./image.module.scss"
+import GitHubIcon from "@material-ui/icons/GitHub"
 
 function gmImg() {
   return (
@@ -7,14 +8,29 @@ function gmImg() {
       <h1 className={style.title}>
         "You must be the change <br></br> you want to see in the world" - Gandhi
       </h1>
+      <div className={style.container_icons}>
+        <div>
+          <a href="https://greenmove-app.herokuapp.com/" target="blank">
+            Visit site
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/paularrea/GreenMove-app"
+            target="blank"
+          >
+            <GitHubIcon />
+          </a>
+        </div>
+      </div>
       <div className={style.row}>
         <img
-            src='https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move1.png?alt=media&token=2a134d8c-97ba-4df6-a827-2ad4b28d386d'
-            alt="greenmove project one"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move1.png?alt=media&token=2a134d8c-97ba-4df6-a827-2ad4b28d386d"
+          alt="greenmove project one"
         />
         <img
-            src='https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move2.png?alt=media&token=107f883e-a04c-48b8-9425-abb71223a33b'
-            alt="greenmove project two"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move2.png?alt=media&token=107f883e-a04c-48b8-9425-abb71223a33b"
+          alt="greenmove project two"
         />
       </div>
       <div className={style.description}>
@@ -32,8 +48,8 @@ function gmImg() {
         </p>
       </div>
       <img
-            src='https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move3.png?alt=media&token=107f883e-a04c-48b8-9425-abb71223a33b'
-            alt="greenmove project three"
+        src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move3.png?alt=media&token=107f883e-a04c-48b8-9425-abb71223a33b"
+        alt="greenmove project three"
       />
     </dir>
   )

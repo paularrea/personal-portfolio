@@ -13,7 +13,7 @@ body {
     --switcher-track:rgb(41, 41, 41);
     
     --textNormal: rgb(41, 41, 41);
-    --textTitle: rgb(70, 70, 70);
+    --textTitle: #464646;
     --normal-link:black;
    
     --btn: #999999;
@@ -23,6 +23,7 @@ body {
     --spinner:rgb(41, 41, 41);
 
     --create:#5083AF;
+    --change: #464646;
 
     --img-filter: grayscale(90%);
 
@@ -33,28 +34,29 @@ body {
     -webkit-font-smoothing: antialiased;
   
     --bg: #181818;
-    --bg-footer: rgb(61, 61, 61);
-    --bg-container:rgb(61, 61, 61);
+    --bg-footer: #3f3f3f;
+    --bg-container:#3f3f3f;
     --bg-input:rgb(93, 93, 93);
 
     --bg-btn-hover:rgb(255, 255, 255);
     --color-btn-hover:#222;
     --bg-menu:black;
 
-    --switcher:#c83a3a;
-    --switcher-track:#c83a3ab9;
+    --switcher:#C81D25;
+    --switcher-track:#C81D25;
 
-    --textNormal: rgb(255, 255, 255);
-    --textTitle: rgb(165, 165, 165);
+    --textNormal: #ffffff;
+    --textTitle: #a5a5a5;
     --normal-link:white;
 
-    --btn:#c83a3a; 
+    --btn:#C81D25; 
     --btn-hover:whitesmoke;
     --active-btn:white;
 
-    --spinner:#c83a3a;
+    --spinner:#C81D25;
 
-    --create:#c83a3a; 
+    --create:#C81D25; 
+    --change: #a5a5a5;
 
     --img-filter: grayscale(0%);
   }
