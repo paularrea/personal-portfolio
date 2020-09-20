@@ -1,21 +1,20 @@
 import React from "react"
 import videoStyle from "./introVideo.module.scss"
-import surfVideo from "../../../static/JOSIE.mp4"
+import ReactPlayer from 'react-player/lazy'
+import url from "../../../static/JOSIE.mp4"
+
 
 function IntroVideo() {
   return (
-    <div className={videoStyle.container}>
-    <video
-      id="background-video"
-      loop
-      autoPlay
+      <ReactPlayer
+      url={url}
+      playing
       muted
-    >
-      <source src={surfVideo} type="video/mp4" />
-      <source src={surfVideo} type="video/ogg" />
-      Your browser does not support the video tag.
-    </video>
-    </div>
+      loop
+      width='60%'
+      height='auto'
+      className={videoStyle.video}
+    />
   )
 }
 

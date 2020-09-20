@@ -37,6 +37,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-transition-link`,
+    `gatsby-transformer-ffmpeg`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
