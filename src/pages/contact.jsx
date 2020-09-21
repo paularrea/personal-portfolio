@@ -2,6 +2,7 @@ import React from "react"
 import emailjs from "emailjs-com"
 import styles from "../styles/contact.module.scss"
 import Layout from "../components/Layout/layout"
+import Swal from "sweetalert2"
 
 export default function Contact() {
   function sendEmail(e) {
@@ -16,9 +17,19 @@ export default function Contact() {
       )
       .then(
         result => {
+          Swal.fire({
+            icon: 'success',
+            title: 'Your message has been sent',
+            text: 'I will answer you as soon as possible!',
+          })
           console.log(result.text)
         },
         error => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+          })
           console.log(error.text)
         }
       )
