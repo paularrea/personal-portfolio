@@ -26,6 +26,9 @@
     color: var(--btn);
     font-size: 0.9rem;
     text-decoration: none !important;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out !important;
 }
 
 
