@@ -63,7 +63,7 @@ const Projects = () => {
                   <p>{edge.node.frontmatter.description}</p>
                   <p className={styles.tech}>{edge.node.frontmatter.tech}</p>
                   <Link
-                    className={styles.normal_link}
+                    className={styles.underline}
                     to={`${edge.node.fields.slug}`}
                   >
                     Read more

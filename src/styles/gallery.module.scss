@@ -37,15 +37,37 @@ margin-bottom: 30px;
     width: 100%;
 }
 
-.normal_link{
+//left to right underline 
+  .underline {
     color: var(--normal-link);
     font-weight: bolder;
     padding-bottom: .1rem;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+  .underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: var(--normal-link);
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .underline:hover:after,
+  .underline:focus:after,
+  .underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
   }
   
-  .normal_link:hover{
-    border-bottom: 1px solid var(--normal-link);
-  }
+ 
 
   .project_info h1{
     -webkit-transition: all 0.5s ease-out;
