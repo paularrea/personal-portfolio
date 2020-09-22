@@ -38,15 +38,15 @@ function gmImg() {
         <h1>About the project</h1>
         <p>
           Interactive game based on a regular feature of Pokémon television
-          episodes where the viwer guess the Pokémon previusly shown as a dark
-          silouette. It's a multiple-choise question, with a countdown, once
+          episodes where the viewer guess the Pokémon previusly shown as a dark
+          silouette. It's a multiple-choice question, with a countdown, once
           time is over the pokemon is reveled and a messege will tell you if
           your answer is correct or incorrect.
         </p>
         <h1>Challenge and technologies</h1>
         <p>
           As a user you have access to the pokedex where all pokemons are
-          dispayed with its main characteristics. Developed using
+          displayed with its main characteristics. Developed using
           <span className={style.bold}> Vanilla JS</span>.
         </p>
       </div>

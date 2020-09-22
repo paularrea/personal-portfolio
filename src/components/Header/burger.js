@@ -3,6 +3,8 @@ import React from "react"
 import TransitionLink from "gatsby-plugin-transition-link"
 import "./burger.css"
 
+import style from "./header.module.scss"
+
 class Burger extends React.Component {
   showSettings(event) {
     event.preventDefault()
@@ -11,13 +13,14 @@ class Burger extends React.Component {
   render() {
     return (
       <Menu className="bm-menu">
-        <TransitionLink
+        <TransitionLink 
           entry={{
             delay: 0.3,
           }}
           to="/"
           id="home"
-          className="menu-item"
+          className={style.menu_item}
+
         >
           Home
         </TransitionLink>
@@ -27,7 +30,7 @@ class Burger extends React.Component {
           }}
           to="/projects"
           id="projects"
-          className="menu-item"
+          className={style.menu_item}
         >
           Projects
         </TransitionLink>
@@ -37,7 +40,7 @@ class Burger extends React.Component {
           }}
           to="/about"
           id="about"
-          className="menu-item"
+          className={style.menu_item}
         >
           About
         </TransitionLink>
@@ -47,7 +50,7 @@ class Burger extends React.Component {
           }}
           to="/contact"
           id="contact"
-          className="menu-item"
+          className={style.menu_item}
         >
           Contact
         </TransitionLink>

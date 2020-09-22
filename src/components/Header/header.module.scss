@@ -60,6 +60,41 @@
     z-index: 999;
 }
 
+.menu_item:active{
+    background-color: transparent;
+    border-bottom: 2px solid var(--textNormal);
+  }
+   
+//   .menu_item {
+//     color: var(--textNormal);
+//     font-weight: bolder;
+//     padding-bottom: .1rem;
+//     display: inline;
+//     position: relative;
+//     overflow: hidden;
+//   }
+//   .menu_item:after {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     right: 0;
+//     width: 0;
+//     bottom: -5px;
+//     background: var(--textNormal);
+//     height: 2px;
+//     transition-property: width;
+//     transition-duration: 0.3s;
+//     transition-timing-function: ease-out;
+//   }
+//   .menu_item:hover:after,
+//   .menu_item:focus:after,
+//   .menu_item:active:after {
+//     left: 0;
+//     right: auto;
+//     width: 100%;
+//   }
+   
+
 //sm screen
 @media (max-width: 700px) {
     .title{

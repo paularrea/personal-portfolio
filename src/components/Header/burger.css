@@ -58,13 +58,7 @@
     font-size: 1.5rem;
     margin-bottom: .5rem;
   }
-
-  .menu-item:active{
-    background-color: transparent;
-    border-bottom: 2px solid var(--textNormal);
-  }
-   
-   
+  
   /* Styling of overlay */
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
