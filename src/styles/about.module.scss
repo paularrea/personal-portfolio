@@ -150,3 +150,9 @@
       height: 40vw;
   }
 }
+
+@media (min-width: 1200px) and (min-height: 700px) {
+    .about_container{
+        height: 100vh;
+    }
+}
