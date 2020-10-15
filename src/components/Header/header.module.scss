@@ -15,6 +15,7 @@
 
 .nav-list{
     display: flex;
+    width: 80%;
     list-style-type: none;
     margin: 0 auto;
     padding-inline-start: 0;
@@ -24,7 +25,7 @@
 
 .nav-item {
     color: var(--btn);
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration: none !important;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -33,6 +34,8 @@
 
 .nav-item:hover {
     color:var(--btn-hover);
+    font-size: 1.1rem;
+    font-weight: bolder;
 }
 
 .active-nav-item {

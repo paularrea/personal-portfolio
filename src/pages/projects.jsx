@@ -51,6 +51,7 @@ const Projects = () => {
         >
           {data.allMdx.edges.map(edge => {
             const featuredImage = edge.node.frontmatter.featuredImage
+            
             return (
               <div>
                 <div className={styles.project_info}>

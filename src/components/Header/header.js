@@ -3,7 +3,7 @@ import headerStyles from "./header.module.scss"
 import Uv from "../UvToggle/uv"
 import Burger from "./burger"
 import Media from "react-media"
-import TransitionLink from 'gatsby-plugin-transition-link'
+import TransitionLink from "gatsby-plugin-transition-link"
 
 const Header = () => {
   return (
@@ -19,9 +19,9 @@ const Header = () => {
             >
               <li>
                 <TransitionLink
-                 entry={{
-                  delay: 0.3
-                }}
+                  entry={{
+                    delay: 0.3,
+                  }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/"
@@ -31,9 +31,9 @@ const Header = () => {
               </li>
               <li>
                 <TransitionLink
-                 entry={{
-                  delay: 0.3
-                }}
+                  entry={{
+                    delay: 0.3,
+                  }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/projects"
@@ -43,9 +43,9 @@ const Header = () => {
               </li>
               <li>
                 <TransitionLink
-                 entry={{
-                  delay: 0.3
-                }}
+                  entry={{
+                    delay: 0.3,
+                  }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/about"
@@ -55,9 +55,9 @@ const Header = () => {
               </li>
               <li>
                 <TransitionLink
-                 entry={{
-                  delay: 0.3
-                }}
+                  entry={{
+                    delay: 0.3,
+                  }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
                   to="/contact"
