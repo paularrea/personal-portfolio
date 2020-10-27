@@ -27,7 +27,31 @@ margin: 0 auto;
   left: 0;
   right: 0;
 }
+//INTRO ANIMATION
+.on_load{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#181818;
+  z-index: 9999999999999;
+}
 
+.on_load div{
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.animation{
+  animation: fade 0.9s erase-in;
+}
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+}
 //MOBILE BIG,  
   @media (max-width: 600px) {
     .container{
