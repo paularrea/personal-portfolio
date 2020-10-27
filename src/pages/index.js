@@ -6,5 +6,4 @@ const App = () => {
     <Site/>
   )
 }
-
 export default App;
