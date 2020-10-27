@@ -44,14 +44,6 @@ margin: 0 auto;
   color: whitesmoke;
 }
 
-.animation{
-  animation: fade 0.9s erase-in;
-}
-@keyframes fade {
-  0% {
-      opacity: 0;
-  }
-}
 //MOBILE BIG,  
   @media (max-width: 600px) {
     .container{
