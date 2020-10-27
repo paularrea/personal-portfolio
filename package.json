@@ -29,6 +29,7 @@
     "gatsby-plugin-ffmpeg": "^0.3.1",
     "gatsby-plugin-manifest": "^2.4.28",
     "gatsby-plugin-mdx": "^1.2.40",
+    "gatsby-plugin-page-load-delay": "^0.1.2",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.34",
     "gatsby-plugin-transition-link": "^1.20.2",

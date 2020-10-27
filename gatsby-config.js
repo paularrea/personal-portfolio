@@ -37,6 +37,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-transition-link`,
+    'gatsby-plugin-page-load-delay',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import headerStyles from "./header.module.scss"
 import Uv from "../UvToggle/uv"
 import Burger from "./burger"

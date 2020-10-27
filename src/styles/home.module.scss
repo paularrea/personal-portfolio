@@ -54,7 +54,7 @@ margin: 0 auto;
 //IPHONE 6,7,8, MotoG4
 @media (min-width: 360px) and (min-height:640px) {
   .container{
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .intro_text{
      bottom: 4rem;
@@ -64,7 +64,7 @@ margin: 0 auto;
 //MOBILE SMALL,  
 @media (max-width: 350px) and (max-height:600px){
   .container{
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .intro{
     height: 70vh;
@@ -77,7 +77,7 @@ margin: 0 auto;
     margin: 0 auto;
      width: 80%;
      line-height: 1rem;
-     bottom: 2rem;
+     bottom: 2.5rem;
     } 
     .intro_text h1{
       font-size: 1rem;
