@@ -7,9 +7,6 @@ import Contact from "../components/web-pages/contact"
 import Projects from "../components/web-pages/projects"
 import style from "../styles/initial.animation.module.scss"
 import Fade from "react-reveal/Fade"
-import config from 'react-reveal/globals';
-
-config({ ssrFadeout: true });
 
 const App = () => {
   const [loaded, setLoaded] = useState(false)
