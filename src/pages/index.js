@@ -1,36 +1,10 @@
-import React, { useState, useEffect } from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
-import Layout from "../components/Layout/layout"
-import Home from "../components/web-pages/home"
-import About from "../components/web-pages/about"
-import Contact from "../components/web-pages/contact"
-import Projects from "../components/web-pages/projects"
-import Animation from "../components/Intro/Animation"
+import React from 'react'
+import Site from './site';
 
 const App = () => {
-  const [loaded, setLoaded] = useState(false)
-
-  useEffect(() => {
-    const intro = setTimeout(() => {
-      setLoaded(true)
-    }, 2000)
-    return () => clearTimeout(intro)
-  }, [])
-
   return (
-    <div>
-      {loaded ? (
-        <Layout>
-          <Home />
-          <Projects />
-          <About />
-          <Contact />
-        </Layout>
-      ) : (
-        <Animation />
-      )}
-    </div>
+    <Site/>
   )
 }
 
-export default App
+export default App;
