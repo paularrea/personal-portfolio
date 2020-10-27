@@ -28,7 +28,11 @@
     filter: var(--img-filter);
 }
 
-
+@media (max-width: 500px) {
+    .about_container{
+        padding: 20% 5%;
+}
+}
 //Pixel2 XL
 @media (max-width: 420px) and (max-height: 850px) {
     .about_container{

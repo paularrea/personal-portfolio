@@ -6,8 +6,6 @@ import Media from "react-media"
 import TransitionLink from "gatsby-plugin-transition-link"
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
   return (
     <div>
       <header id="navbar" className={headerStyles.header}>
@@ -75,9 +73,7 @@ const Header = () => {
         </Media>
         <Media query={{ maxWidth: 950 }}>
           <div className={headerStyles.burger_container}>
-            <a href="#" alt="burger-menu" onClick={() => setIsOpen(true)}>
-              <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
-            </a>
+            <Burger />
             <Uv />
           </div>
         </Media>
