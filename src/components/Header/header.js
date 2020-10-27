@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import headerStyles from "./header.module.scss"
 import Uv from "../UvToggle/uv"
 import Burger from "./burger"
@@ -6,9 +6,11 @@ import Media from "react-media"
 import TransitionLink from "gatsby-plugin-transition-link"
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div>
-      <header className={headerStyles.header}>
+      <header id="navbar" className={headerStyles.header}>
         <Media query={{ minWidth: 950 }}>
           <nav>
             <ul
@@ -24,7 +26,7 @@ const Header = () => {
                   }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
-                  to="/"
+                  to="/#home"
                 >
                   HOME
                 </TransitionLink>
@@ -36,7 +38,7 @@ const Header = () => {
                   }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
-                  to="/projects"
+                  to="/#projects"
                 >
                   PROJECTS
                 </TransitionLink>
@@ -48,7 +50,7 @@ const Header = () => {
                   }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
-                  to="/about"
+                  to="/#about"
                 >
                   ABOUT
                 </TransitionLink>
@@ -60,7 +62,7 @@ const Header = () => {
                   }}
                   className={headerStyles.navItem}
                   activeClassName={headerStyles.activeNavItem}
-                  to="/contact"
+                  to="/#contact"
                 >
                   CONTACT
                 </TransitionLink>
@@ -73,7 +75,9 @@ const Header = () => {
         </Media>
         <Media query={{ maxWidth: 950 }}>
           <div className={headerStyles.burger_container}>
-            <Burger />
+            <a href="#" alt="burger-menu" onClick={() => setIsOpen(true)}>
+              <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
+            </a>
             <Uv />
           </div>
         </Media>

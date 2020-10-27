@@ -1,6 +1,7 @@
 import React from "react"
 import style from "./image.module.scss"
 import GitHubIcon from "@material-ui/icons/GitHub"
+import {Link} from 'gatsby'
 
 function gmImg() {
   return (
@@ -10,7 +11,7 @@ function gmImg() {
       </h1>
       <div className={style.container_icons}>
         <div>
-          <a href="https://greenmove-app.herokuapp.com/" target="blank">
+          <a className={style.site} href="https://greenmove-app.herokuapp.com/" target="blank">
             Visit site
           </a>
         </div>
@@ -22,16 +23,6 @@ function gmImg() {
             <GitHubIcon />
           </a>
         </div>
-      </div>
-      <div className={style.row}>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move1.png?alt=media&token=2a134d8c-97ba-4df6-a827-2ad4b28d386d"
-          alt="greenmove project one"
-        />
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move2.png?alt=media&token=107f883e-a04c-48b8-9425-abb71223a33b"
-          alt="greenmove project two"
-        />
       </div>
       <div className={style.description}>
         <h1>About the project</h1>
@@ -49,10 +40,21 @@ function gmImg() {
           <span className={style.bold}> MongoDB</span> for storing user data. Deployed with <span className={style.bold}>heroku</span>.
         </p>
       </div>
+      <div className={style.row}>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move1.png?alt=media&token=2a134d8c-97ba-4df6-a827-2ad4b28d386d"
+          alt="greenmove project one"
+        />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move2.png?alt=media&token=107f883e-a04c-48b8-9425-abb71223a33b"
+          alt="greenmove project two"
+        />
       <img
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move3.png?alt=media&token=107f883e-a04c-48b8-9425-abb71223a33b"
         alt="greenmove project three"
-      />
+        />
+        </div>
+        <Link className={style.link} to='/#projects'>Back to projects</Link>
     </dir>
   )
 }

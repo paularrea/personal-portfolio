@@ -1,9 +1,8 @@
 import React from "react"
-import Layout from "../components/Layout/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Masonry from "react-masonry-css"
-import styles from "../styles/gallery.module.scss"
+import styles from "../../styles/gallery.module.scss"
 
 const breakpointColumnsObj = {
   default: 3,
@@ -12,7 +11,7 @@ const breakpointColumnsObj = {
   500: 1,
 }
 
-const Projects = () => {
+const ProjectList = () => {
   const data = useStaticQuery(graphql`
     query {
       allMdx {
@@ -42,8 +41,8 @@ const Projects = () => {
   `)
 
   return (
-    <Layout>
-      <div className={styles.gallery_container}>
+      <div id='projects' className={styles.gallery_container}>
+        <h1 className={styles.component_title}>Projects</h1>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className={styles.my_masonry_grid}
@@ -75,8 +74,7 @@ const Projects = () => {
           })}
         </Masonry>
       </div>
-    </Layout>
   )
 }
 
-export default Projects
+export default ProjectList

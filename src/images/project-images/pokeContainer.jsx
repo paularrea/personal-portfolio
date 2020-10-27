@@ -1,6 +1,7 @@
 import React from "react"
 import style from "./image.module.scss"
 import GitHubIcon from "@material-ui/icons/GitHub"
+import {Link} from 'gatsby'
 
 function gmImg() {
   return (
@@ -8,7 +9,7 @@ function gmImg() {
       <h1 className={style.title}>Who's that Pokémon?</h1>
       <div className={style.container_icons}>
         <div>
-          <a
+          <a className={style.site}
             href="https://paularrea.github.io/Proyecto---pokemon/"
             target="blank"
           >
@@ -23,16 +24,6 @@ function gmImg() {
             <GitHubIcon />
           </a>
         </div>
-      </div>
-      <div className={style.row}>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/pokemon%2Fcarousel-pokemon1.png?alt=media&token=9ebe38bc-48aa-4854-a04a-511bf4365601"
-          alt="pokemon project one"
-        />
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/pokemon%2Fcarousel-pokemon2.png?alt=media&token=9ebe38bc-48aa-4854-a04a-511bf4365601"
-          alt="pokemon project two"
-        />
       </div>
       <div className={style.description}>
         <h1>About the project</h1>
@@ -50,6 +41,17 @@ function gmImg() {
           <span className={style.bold}> Vanilla JS</span>.
         </p>
       </div>
+      <div className={style.row}>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/pokemon%2Fcarousel-pokemon1.png?alt=media&token=9ebe38bc-48aa-4854-a04a-511bf4365601"
+          alt="pokemon project one"
+        />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/pokemon%2Fcarousel-pokemon2.png?alt=media&token=9ebe38bc-48aa-4854-a04a-511bf4365601"
+          alt="pokemon project two"
+        />
+      </div>
+      <Link className={style.link} to='/#projects'>Back to projects</Link>
     </dir>
   )
 }

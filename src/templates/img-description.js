@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade"
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../components/Layout/layout";
 
+
 export default ({
   data: {
     mdx: { body },

@@ -2,25 +2,38 @@ import { slide as Menu } from "react-burger-menu"
 import React from "react"
 import TransitionLink from "gatsby-plugin-transition-link"
 import "./burger.css"
-
 import style from "./header.module.scss"
 
 class Burger extends React.Component {
-  showSettings(event) {
-    event.preventDefault()
+  constructor(props) {
+    super(props)
+    this.state = {
+      menuOpen: false,
+    }
   }
-
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen })
+  }
+  closeMenu() {
+    this.setState({ menuOpen: false })
+  }
+  toggleMenu() {
+    this.setState(state => ({ menuOpen: !state.menuOpen }))
+  }
   render() {
     return (
-      <Menu className="bm-menu">
-        <TransitionLink 
+      <Menu
+        isOpen={this.state.menuOpen}
+        onStateChange={state => this.handleStateChange(state)}
+        className="bm-menu"
+      >
+        <TransitionLink
           entry={{
             delay: 0.3,
           }}
-          to="/"
-          id="home"
+          to="/#home"
           className={style.menu_item}
-
+          onClick={() => this.closeMenu()}
         >
           Home
         </TransitionLink>
@@ -28,9 +41,9 @@ class Burger extends React.Component {
           entry={{
             delay: 0.3,
           }}
-          to="/projects"
-          id="projects"
+          to="/#projects"
           className={style.menu_item}
+          onClick={() => this.closeMenu()}
         >
           Projects
         </TransitionLink>
@@ -38,9 +51,9 @@ class Burger extends React.Component {
           entry={{
             delay: 0.3,
           }}
-          to="/about"
-          id="about"
+          to="/#about"
           className={style.menu_item}
+          onClick={() => this.closeMenu()}
         >
           About
         </TransitionLink>
@@ -48,9 +61,9 @@ class Burger extends React.Component {
           entry={{
             delay: 0.3,
           }}
-          to="/contact"
-          id="contact"
+          to="/#contact"
           className={style.menu_item}
+          onClick={() => this.closeMenu()}
         >
           Contact
         </TransitionLink>

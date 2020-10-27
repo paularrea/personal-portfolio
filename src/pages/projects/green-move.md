@@ -1,5 +1,5 @@
 ---
-title: GREEN MOVE
+title: GREEN MOVE APP
 web: https://greenmove-app.herokuapp.com/
 github: https://github.com/paularrea/GreenMove-app
 tech: ReactJS · MongoDB · Express · NodeJS · Bootstrap · Mapbox

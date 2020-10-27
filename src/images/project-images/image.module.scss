@@ -1,11 +1,11 @@
 
 .container{
     margin: 0;
-    padding: 0;
-    padding-bottom: 2rem;
+    padding: 5% 10%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg);
     justify-content: center;
 }
 
@@ -22,6 +22,8 @@
 .container_icons a{
     color: var(--textTitle) !important;
     font-size: 1rem;
+    text-decoration: none !important;
+
 }
 .container_icons a:hover{
     color: var(--textNormal) !important;;
@@ -30,9 +32,12 @@
 .container_icons a:active{
     color: var(--textNormal) !important;;
 }
-
+.site{
+    border-bottom: 1px solid var(--textTitle);
+}
 .title{
     margin: 0 auto;
+    font-size: 1.5rem;
 }
 
 .row{
@@ -49,22 +54,33 @@
 
 .container>img{
 width: 100%;
-
 }
 
+.link{
+    margin: 4vh auto;
+    font-size: 1.2rem;
+    color:var(--textTitle);
+}
+.link:hover{
+    color:var(--textNormal);
+}
 @media (max-width: 700px) {
+    .container{
+        padding: 0;
+        padding-top: 15%;
+    }
     .description{
         padding: 2rem 1rem;
             h1{
-                font-size: 7vw;
+                font-size: 1.33rem;
             }
             p{
-                font-size: 5vw;
+                font-size: 1rem;
                 font-weight: lighter;
             }
         }
         .title{
-            font-size: 6vw;
+            font-size: 1.5rem;
             padding: 1rem;
             padding-bottom: 0;
         }
@@ -72,9 +88,9 @@ width: 100%;
 
 @media (min-width: 700px) {
     .description{
-        padding: 2rem 0;
+        padding: 2rem;
             h1{
-                font-size: 2vw;
+                font-size: 1.5rem;
             }
             p{
                 font-size: 1.3vw;
@@ -82,7 +98,7 @@ width: 100%;
             }
         }
         .title{
-            font-size: 4vw;
+            font-size: 2rem;
             padding: 1rem 0;
         }
         .container_icons a{

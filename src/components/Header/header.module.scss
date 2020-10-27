@@ -1,16 +1,20 @@
-
-
 .header{
-    padding: 1rem 0;
-    position: relative;
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    background-color: var(--bg);
+    transition: top 0.3s;
+    // -webkit-box-shadow: 0px 2px 33px -10px rgba(0,0,0,0.44);
+    // -moz-box-shadow: 0px 2px 33px -10px rgba(0,0,0,0.44);
+    // box-shadow: 0px 2px 33px -10px rgba(0,0,0,0.44);
 }
 
 .title{
-    position: absolute;
     background-color: transparent !important;
     color: var(--textTitle);
     text-decoration: none;
-
 }
 
 .nav-list{
@@ -49,9 +53,7 @@
     padding: 1rem 3rem;
 }
 
-
 //burger
-
 .burger_container{
     display: flex;
     justify-content: space-between;
@@ -66,37 +68,8 @@
 .menu_item:active{
     background-color: transparent;
     border-bottom: 2px solid var(--textNormal);
-  }
-   
-//   .menu_item {
-//     color: var(--textNormal);
-//     font-weight: bolder;
-//     padding-bottom: .1rem;
-//     display: inline;
-//     position: relative;
-//     overflow: hidden;
-//   }
-//   .menu_item:after {
-//     content: "";
-//     position: absolute;
-//     z-index: -1;
-//     right: 0;
-//     width: 0;
-//     bottom: -5px;
-//     background: var(--textNormal);
-//     height: 2px;
-//     transition-property: width;
-//     transition-duration: 0.3s;
-//     transition-timing-function: ease-out;
-//   }
-//   .menu_item:hover:after,
-//   .menu_item:focus:after,
-//   .menu_item:active:after {
-//     left: 0;
-//     right: auto;
-//     width: 100%;
-//   }
-   
+}
+
 
 //sm screen
 @media (max-width: 700px) {
@@ -105,8 +78,7 @@
         letter-spacing: .2rem;
         padding-bottom: 1rem ;
         width: 80vw;
-        left: 10vw;
-        top: 25vw;
+
     }
 }   
 
@@ -117,11 +89,9 @@
         letter-spacing: .3rem;
         padding-bottom: 1rem ;
         width: 78vw;
-        left: 9vw;
-        top: 10vw;
-    }
-    
-  }
+
+    }    
+}
 
 //ipad
   @media (min-width: 600px) and (max-width: 950px) {
@@ -139,11 +109,10 @@
 
   @media (min-width: 1200px) {
     .title{
-        font-size: 6vw;
-        letter-spacing: .3rem;
+        font-size: 5vw;
+        letter-spacing: .2rem;
         padding-bottom: 1rem ;
-        width: 78vw;
-        left: 9vw;
-        top: 5vw;
+        width: 70%;
+
     }
   }

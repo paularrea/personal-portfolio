@@ -1,8 +1,11 @@
 
+
+
 body {
     --bg: white;
     --bg-footer: whitesmoke;
-    --bg-container:whitesmoke;
+    --bg-projects:whitesmoke;
+    --bg-container:#cecece;
     --bg-input:white;
     
     --bg-btn-hover:#000000;
@@ -34,8 +37,9 @@ body {
     -webkit-font-smoothing: antialiased;
   
     --bg: #181818;
-    --bg-footer: #3f3f3f;
-    --bg-container:#3f3f3f;
+    --bg-footer: #181818;
+    --bg-projects:black;
+    --bg-container:#616161;
     --bg-input:rgb(93, 93, 93);
 
     --bg-btn-hover:rgb(255, 255, 255);

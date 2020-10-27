@@ -10,6 +10,10 @@ import layoutStyles from "./layout.module.scss"
 
 const Layout = (props) => {
 
+  if (typeof window !== "undefined") {
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
   return (
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>

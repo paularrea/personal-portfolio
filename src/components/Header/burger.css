@@ -55,6 +55,7 @@
     outline: none !important;
     outline-color: transparent;
     color: var(--textNormal) !important;
+    text-decoration: none !important;
     font-size: 1.5rem;
     margin-bottom: .5rem;
   }

@@ -1,19 +1,14 @@
 import React from "react"
 import headerStyles from "./header.module.scss"
 
-function Logo() {
+function Title() {
   return (
     <div>
-      <h1
-        style={{
-          backgroundColor: "var(--bg)",
-        }}
-        className={headerStyles.title}
-      >
+      <h1 className={headerStyles.title}>
         Hello! I'm Pau Larrea, a FRONTEND DEVELOPER based in Barcelona.
       </h1>
     </div>
   )
 }
 
-export default Logo
+export default Title

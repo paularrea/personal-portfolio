@@ -1,11 +1,19 @@
 /* email */
+.container{
+width: 100%;
+height: auto;
+padding: 5% 0;
+background-color: var(--bg-projects);
+}
 
 .email_container{
     height: auto;
     margin: 0 auto;
     margin-bottom: 5%;
     color: var(--textNormal);
-    background-color: var(--bg-container);
+    background-color: transparent;
+    border: 1px solid var(--textNormal);
+
    }
 
    .email_wrapper h1{
@@ -99,10 +107,11 @@
 
 @media (min-width: 800px) {
     .email_container{
-        width: 50vw;
-        height: 35vw;
+        width: 50%;
+        height: auto;
         margin: 0 auto;
         margin-top: 4vw;
+        margin-bottom: 5%;
     }
     .email_form_title{
         margin-top: 2vw;

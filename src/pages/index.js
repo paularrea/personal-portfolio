@@ -1,23 +1,25 @@
 import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from "../components/Layout/layout"
-import IntroVideo from "../components/Video/introVideo.jsx"
-import Logo from "../components/Header/title"
-import styles from "../styles/home.module.scss"
+import Home from "../components/web-pages/home"
+import About from "../components/web-pages/about"
+import Contact from "../components/web-pages/contact"
+import Projects from "../components/web-pages/projects"
+import style from "../styles/index.scss"
 
-const Home = () => {
+const App = () => {
   return (
-    <Layout>
-      <Logo />
-      <IntroVideo />
-      <div className={styles.intro_text}>
-        <h1>
-          My name is Pau Larrea, very nice to meet you! Please take a look
-          around. Here you can find a bit of myself and some of my personal
-          projects.
-        </h1>
-      </div>
-    </Layout>
+    <div>
+      <Layout>
+        <div className={style.container}>
+          <Home />
+          <Projects />
+          <About />
+          <Contact />
+        </div>
+      </Layout>
+    </div>
   )
 }
 
-export default Home
+export default App

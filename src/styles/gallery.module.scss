@@ -1,40 +1,61 @@
 .gallery_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1rem;
-}
-
-.my_masonry_grid {
-    display: -webkit-box; /* Not needed if autoprefixing */
-    display: -ms-flexbox; /* Not needed if autoprefixing */
-    display: flex;
-    margin-left: -30px; /* gutter size offset */
+    padding: 5% 10%;
+    background-color: var(--bg-projects);
     width: 100%;
-    img {
-        -webkit-transition: all 0.5s ease-out;
-        -moz-transition: all 0.5s ease-out;
-        transition: all 0.5s ease-out !important;
-    }
-    img:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-    }
-}
-.my_masonry_grid_column {
-padding-left: 30px; /* gutter size */
-background-clip: padding-box;
 }
 
-/* Style your items */
-.my_masonry_grid_column > div { /* change div to reference your elements you put in <Masonry> */
-background: transparent;
-margin-bottom: 30px;
+.component_title{
+  font-size: 2rem;
 }
 
 .img {
-    max-height: 90vh;
-    width: 100%;
+    height: 30vh;
+    width: auto;
+    -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out !important;
+}
+
+.img:hover{
+  filter: brightness(60%);
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.4);
+}
+
+.project_info{
+  width: auto;
+  position: relative;
+  margin: 2vw;
+}
+
+.title{
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out !important;
+    text-align: left;
+    margin-bottom: 1.2rem;
+    position: absolute;
+    bottom: 5%;
+    left: -10%;
+    z-index: 9999;
+    width: auto;
+    max-width: 10vw;
+    border-bottom: 4px solid var(--textNormal);
+  }
+  
+  .title h1{
+    font-size: 2rem; 
+    color: var(--textNormal);
+}
+
+.title:hover{
+  transform: scale(1.1);
+}
+
+.tech{
+    color: var(--textTitle);
+    font-size: 0.9rem;
 }
 
 //left to right underline 
@@ -66,34 +87,22 @@ margin-bottom: 30px;
     right: auto;
     width: 100%;
   }
-  
- 
-
-  .project_info h1{
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out !important;
-      color: var(--textTitle);
-      font-size: 1.2rem;
-      text-align: center;
-      margin-bottom: 1.2rem;
-  }
-  .project_info h1:hover{
-    color: var(--textNormal);
-
-}
-  .project_info{
-      margin-top: 2vw;
-  }
-
-  .tech{
-      color: var(--textTitle);
-      font-size: 0.9rem;
-  }
 
   @media (max-width: 600px) {
+    .gallery_container{
+      padding: 1% 0;
+    }
+    .component_title{
+      padding-left: 10%;
+    }
     .project_info{
         margin-bottom: 20vw;
+    }
+    .title{
+      left: -3%;
+      bottom: -25%;
+      width: auto;
+      max-width: 50vw;
     }
     
   }

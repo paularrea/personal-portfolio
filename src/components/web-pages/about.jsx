@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { useTransition, animated } from "react-spring"
-import Layout from "../components/Layout/layout"
-import RevealContact from "../components/Reveal/RevealContact"
-import style from "../styles/about.module.scss"
+import RevealContact from "../../components/Reveal/RevealContact"
+import style from "../../styles/about.module.scss"
+import Fade from "react-reveal/Fade"
 
 const About = () => {
   const [index, setIndex] = useState(0)
@@ -42,8 +42,8 @@ const About = () => {
   }, [items.length])
 
   return (
-    <Layout>
-      <div className={style.about_container}>
+      <div id='about' className={style.about_container}>
+        <h1 className={style.component_title}>ABOUT</h1>
         <div className={style.description}>
           <p>
             Hi I am Pau, a frontend developer passionate about building
@@ -55,16 +55,17 @@ const About = () => {
 
         <RevealContact />
         <div className={style.change}>
-          <p>My goal is to work ...</p>
+          <p style={{fontStyle:"italic"}} >My goal is to work ...</p>
           {fadingTextPropsTransition.map(({ item, key }) => (
             <animated.div style={{fontStyle:"italic"}} key={key}>
               <p>" {item.title} "</p>
             </animated.div>
           ))}
         </div>
+        <Fade bottom>
         <div className={style.img}></div>
+        </Fade>
       </div>
-    </Layout>
   )
 }
 
