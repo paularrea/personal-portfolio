@@ -52,7 +52,6 @@ const About = () => {
             traveling around.
           </p>
         </div>
-
         <RevealContact />
         <div className={style.change}>
           <p style={{fontStyle:"italic"}} >My goal is to work ...</p>

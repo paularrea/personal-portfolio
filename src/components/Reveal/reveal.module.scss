@@ -41,6 +41,8 @@ margin-top: 2rem;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out !important;
+    z-index: 999999999999999;
+    text-decoration: none !important;
   }
   
   .btn:hover {

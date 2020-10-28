@@ -30,7 +30,7 @@ const App = () => {
       ) : (
         <div className={style.on_load}>
           <Fade top>
-          <div className={style.animation}>Pau Larrea.</div>
+          <div className={style.animation}>Pau Larrea .</div>
           </Fade>
         </div>
       )}

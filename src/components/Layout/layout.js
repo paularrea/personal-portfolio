@@ -9,7 +9,7 @@ import '../../styles/index.scss'
 import layoutStyles from "./layout.module.scss"
 
 const Layout = (props) => {
-
+  
   if (typeof window !== "undefined") {
     require("smooth-scroll")('a[href*="#"]')
   }

@@ -45,7 +45,7 @@
   }
   
   .title h1{
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     color: var(--textNormal);
 }
 
@@ -100,10 +100,11 @@
         margin-bottom: 20vw;
     }
     .title{
-      left: -3%;
-      bottom: -25%;
+      left: -2%;
+      bottom: -2%;
       width: auto;
-      max-width: 50vw;
+      height: fit-content;
+      max-width: 40vw;
     }
     
   }

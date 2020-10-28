@@ -38,11 +38,17 @@
 
 .nav-item:hover {
     color:var(--btn-hover);
-    font-size: 1.1rem;
     font-weight: bolder;
 }
 
 .active-nav-item {
+    text-decoration: none !important;
+    color: var(--active-btn);
+    padding-bottom: .5vh;
+    border-bottom: 2px solid var(--active-btn);
+}
+
+.active-nav-item:hover{
     color: var(--active-btn);
 }
 
@@ -68,6 +74,7 @@
 .menu_item:active{
     background-color: transparent;
     border-bottom: 2px solid var(--textNormal);
+    width: 1vw;
 }
 
 
