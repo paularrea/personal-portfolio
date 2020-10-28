@@ -4,6 +4,7 @@
     min-height: 100vh;
     padding: 5% 10%;
     background-color: var(--bg);
+    z-index: 1;
 }
 
 .component_title{
@@ -23,7 +24,7 @@
     background-image: url('../images/profile.png');
     background-size: cover;
     position: absolute;
-    z-index: -1 !important;
+    z-index: 99999 !important;
     filter: var(--img-filter);
 }
 

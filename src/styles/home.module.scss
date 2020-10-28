@@ -17,6 +17,7 @@ margin: 0 auto;
 .title{
   position: absolute;
   top: 8vh !important;
+  z-index: 2;
 
 }
 
@@ -47,7 +48,6 @@ margin: 0 auto;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
 }
 
 //MOBILE BIG,  
