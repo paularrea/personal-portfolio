@@ -1,29 +1,43 @@
-
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
-import Fade from "react-reveal/Fade"
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
-import '../../styles/index.scss'
+import "../../styles/index.scss"
+import Fade from "react-reveal/Fade"
 
 import layoutStyles from "./layout.module.scss"
 
-const Layout = (props) => {
-  
+const Layout = props => {
+  const [closeIntro, setCloseIntro] = useState(false)
+
+  useEffect(() => {
+    const intro = setTimeout(() => {
+      setCloseIntro(true)
+    }, 2000)
+    return () => clearTimeout(intro)
+  }, [])
+
   if (typeof window !== "undefined") {
     require("smooth-scroll")('a[href*="#"]')
   }
 
   return (
+    <>
+         {!closeIntro && (
+        <div className={layoutStyles.on_load}>
+          <Fade top>
+            <div className={layoutStyles.animation}>Pau Larrea .</div>
+          </Fade>
+        </div>
+      )}
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
-      <Header />
-      <Fade cascade delay={300} duration={1000}>
+        <Header />
         <main className={layoutStyles.main_container}>{props.children}</main>
-      </Fade>
       </div>
       <Footer />
     </div>
+    </>
   )
 }
 

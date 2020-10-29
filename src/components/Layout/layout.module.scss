@@ -11,6 +11,28 @@
     flex-grow: 1;
 }
 
+.on_load{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#181818;
+    z-index: 9999999999999999;
+  }
+  
+  .on_load div{
+    font-size: 1.5rem;
+    background-color: #666666;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
+  }
+
 @media (max-width: 800px) {
     .main_container{
         // padding: 1rem 1rem 0 1rem;
