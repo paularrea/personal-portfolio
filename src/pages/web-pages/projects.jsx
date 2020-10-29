@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { Container, Row, Col } from "reactstrap"
 import styles from "../../styles/gallery.module.scss"
+import SEO from "../../components/seo"
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -70,6 +71,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className={styles.gallery_container}>
+            <SEO title="Projects Pau Larrea" description="List of projects I've been involved with or I develop myself. Check them out!"/>
       <h1 className={styles.component_title}>PROJECTS</h1>
       <Container>
         <Row>{projects}</Row>

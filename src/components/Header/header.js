@@ -14,17 +14,17 @@ const Header = () => {
   useEffect(() => {
     const changeUnderline = () => {
       console.log(window.scrollY)
-      if (window.scrollY < 100 * window.innerHeight/100)  {
+      if (window.scrollY < 90 * window.innerHeight/100)  {
         setHomeUnderline(true);
         setProjectsUnderline(false);
         setAboutUnderline(false);
         setContactUnderline(false);
-      } else if (window.scrollY > 100 * window.innerHeight/100 && window.scrollY < 200 * window.innerHeight/100) {
+      } else if (window.scrollY > 90 * window.innerHeight/100 && window.scrollY < 180 * window.innerHeight/100) {
         setHomeUnderline(false);
         setProjectsUnderline(true);
         setAboutUnderline(false);
         setContactUnderline(false);
-      } else if (window.scrollY > 200 * window.innerHeight/100 && window.scrollY < 260 * window.innerHeight/100)  {
+      } else if (window.scrollY > 180 * window.innerHeight/100 && window.scrollY < 260 * window.innerHeight/100)  {
         setHomeUnderline(false);
         setProjectsUnderline(false);
         setAboutUnderline(true);

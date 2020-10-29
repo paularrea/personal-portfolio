@@ -3,6 +3,7 @@ import { useTransition, animated } from "react-spring"
 import RevealContact from "../../components/Reveal/RevealContact"
 import style from "../../styles/about.module.scss"
 import Fade from "react-reveal/Fade"
+import SEO from "../../components/seo"
 
 const About = () => {
   const [index, setIndex] = useState(0)
@@ -42,29 +43,35 @@ const About = () => {
   }, [items.length])
 
   return (
-      <div id='about' className={style.about_container}>
-        <h1 className={style.component_title}>ABOUT</h1>
-        <div className={style.description}>
-          <p>
-            Hi I am Pau, a frontend developer passionate about building
+    <div id="about" className={style.about_container}>
+      <SEO
+        title="About Pau Larrea"
+        description="Hi I am Pau, a frontend developer passionate about building
             beautiful and intuitive designs that improves people's lives. While
             I'm not coding or pushing pixels, you'll find me surfing or
-            traveling around.
-          </p>
-        </div>
-        <RevealContact />
-        <div className={style.change}>
-          <p style={{fontStyle:"italic"}} >My goal is to work ...</p>
-          {fadingTextPropsTransition.map(({ item, key }) => (
-            <animated.div style={{fontStyle:"italic"}} key={key}>
-              <p>" {item.title} "</p>
-            </animated.div>
-          ))}
-        </div>
-        <Fade bottom>
-        <div className={style.img}></div>
-        </Fade>
+            traveling around."
+      />
+      <h1 className={style.component_title}>ABOUT</h1>
+      <div className={style.description}>
+        <p>
+          Hi I am Pau, a frontend developer passionate about building beautiful
+          and intuitive designs that improves people's lives. While I'm not
+          coding or pushing pixels, you'll find me surfing or traveling around.
+        </p>
       </div>
+      <RevealContact />
+      <div className={style.change}>
+        <p style={{ fontStyle: "italic" }}>My goal is to work ...</p>
+        {fadingTextPropsTransition.map(({ item, key }) => (
+          <animated.div style={{ fontStyle: "italic" }} key={key}>
+            <p>" {item.title} "</p>
+          </animated.div>
+        ))}
+      </div>
+      <Fade bottom>
+        <div className={style.img}></div>
+      </Fade>
+    </div>
   )
 }
 

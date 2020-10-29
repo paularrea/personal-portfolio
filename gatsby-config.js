@@ -1,13 +1,22 @@
 module.exports = {
   siteMetadata: {
     title: `Pau Larrea Llopis`,
-    description: `Portfolio web de Pau Larrea`,
+    description: `Portfolio web de Pau Larrea, frontend developer`,
     author: `Pau Larrea`,
     siteUrl: "https://www.paularrea.com",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.paularrea.com',
+        sitemap: 'https://www.paularrea.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

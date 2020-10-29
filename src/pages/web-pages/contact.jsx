@@ -2,6 +2,7 @@ import React from "react"
 import emailjs from "emailjs-com"
 import styles from "../../styles/contact.module.scss"
 import Fade from "react-reveal/Fade"
+import SEO from "../../components/seo"
 // import Swal from 'sweetalert2'
 // import withReactContent from 'sweetalert2-react-content'
 
@@ -42,6 +43,7 @@ export default function Contact() {
 
   return (
     <div id="contact" className={styles.container}>
+       <SEO title="Contact Pau Larrea" description="Contact page of Pau Larrea"/>
       <Fade bottom>
         <div className={styles.email_container}>
           <div className={styles.email_wrapper}>
