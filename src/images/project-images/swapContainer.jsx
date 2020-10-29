@@ -2,10 +2,15 @@ import React from "react"
 import style from "./image.module.scss"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import {Link} from 'gatsby'
+import SEO from "../../components/seo"
 
 function gmImg() {
   return (
     <dir className={style.container}>
+        <SEO
+        title="Swap it!"
+        description="Swap it is a social platform designed to post and exchange handmade products."
+      />
       <h1 className={style.title}>
         Swap it!
       </h1>

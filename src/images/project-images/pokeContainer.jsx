@@ -1,15 +1,21 @@
 import React from "react"
 import style from "./image.module.scss"
 import GitHubIcon from "@material-ui/icons/GitHub"
-import {Link} from 'gatsby'
+import { Link } from "gatsby"
+import SEO from "../../components/seo"
 
 function gmImg() {
   return (
     <dir className={style.container}>
+      <SEO
+        title="Who's that Pokémon?"
+        description="Interactive game based on a regular feature of pokemon television episodes where the viwer guess the pokemon previusly shown as a dark silouette."
+      />
       <h1 className={style.title}>Who's that Pokémon?</h1>
       <div className={style.container_icons}>
         <div>
-          <a className={style.site}
+          <a
+            className={style.site}
             href="https://paularrea.github.io/Proyecto---pokemon/"
             target="blank"
           >
@@ -51,7 +57,9 @@ function gmImg() {
           alt="pokemon project two"
         />
       </div>
-      <Link className={style.link} to='/#projects'>Back to projects</Link>
+      <Link className={style.link} to="/#projects">
+        Back to projects
+      </Link>
     </dir>
   )
 }

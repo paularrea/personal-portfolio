@@ -43,7 +43,7 @@ export default function Contact() {
 
   return (
     <div id="contact" className={styles.container}>
-       <SEO title="Contact Pau Larrea" description="Contact page of Pau Larrea"/>
+       <SEO title="Frontend" description="Contact page of Pau Larrea"/>
       <Fade bottom>
         <div className={styles.email_container}>
           <div className={styles.email_wrapper}>
