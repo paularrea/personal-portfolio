@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import Header from "../Header/header"
 import Footer from "../Footer/footer"
@@ -13,7 +13,7 @@ const Layout = props => {
   useEffect(() => {
     const intro = setTimeout(() => {
       setCloseIntro(true)
-    }, 2300)
+    }, 2000)
     return () => clearTimeout(intro)
   }, [])
 
@@ -23,20 +23,20 @@ const Layout = props => {
 
   return (
     <>
-      {!closeIntro && (
-          <div className={layoutStyles.on_load}>
-            <Fade top>
-              <div className={layoutStyles.animation}>Pau Larrea .</div>
-            </Fade>
-          </div>
-      )}
-      <div className={layoutStyles.container}>
-        <div className={layoutStyles.content}>
-          <Header />
-          <main className={layoutStyles.main_container}>{props.children}</main>
+         {!closeIntro && (
+        <div className={layoutStyles.on_load}>
+          <Fade top>
+            <div className={layoutStyles.animation}>Pau Larrea .</div>
+          </Fade>
         </div>
-        <Footer />
+      )}
+    <div className={layoutStyles.container}>
+      <div className={layoutStyles.content}>
+        <Header />
+        <main className={layoutStyles.main_container}>{props.children}</main>
       </div>
+      <Footer />
+    </div>
     </>
   )
 }
