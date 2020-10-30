@@ -5,11 +5,9 @@ import Home from "./web-pages/home"
 import About from "./web-pages/about"
 import Contact from "./web-pages/contact"
 import Projects from "./web-pages/projects"
-// import style from "../styles/home.module.scss"
 import SEO from "../components/seo"
 
 const App = () => {
-
 
   return (
     <>

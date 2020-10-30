@@ -33,7 +33,7 @@
     color: var(--textNormal) !important;;
 }
 .site{
-    border-bottom: 1px solid var(--textTitle);
+    border-bottom: 2px solid var(--textTitle);
 }
 .title{
     margin: 0 auto;
@@ -60,9 +60,12 @@ width: 100%;
     margin: 4vh auto;
     font-size: 1.2rem;
     color:var(--textTitle);
+    border-bottom: 2px solid var(--textTitle);
 }
+
 .link:hover{
     color:var(--textNormal);
+    text-decoration: none;
 }
 @media (max-width: 700px) {
     .container{

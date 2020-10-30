@@ -18,10 +18,10 @@ const Home = () => {
         <IntroVideo />
       </div>
       <div className={styles.intro_text}>
-        <Fade bottom>
+        <Fade left delay={2500}>
           <h1>
             My name is Pau Larrea, very nice to meet you! Please take a look
-            around. Here you can find a bit of myself and some of my personal
+            around.<br/>Here you can find a bit of myself and some of my personal
             projects.
           </h1>
         </Fade>

@@ -13,21 +13,22 @@ background-color: var(--bg-projects);
     color: var(--textNormal);
     background-color: transparent;
     border: 1px solid var(--textNormal);
+    
+}
 
-   }
+.email_wrapper h1{
+    text-align: left;
+    font-size: 1.5rem;
+}
 
-   .email_wrapper h1{
-       text-align: left;
-       font-size: 1.5rem;
-   }
-   
-   .email_form_title{
-       width: 100%;
-       color: var(--textNormal);
-       margin: 0;
-   }
+.email_form_title{
+    width: 100%;
+    color: var(--textNormal);
+    margin: 0;
+}
 
-   .message_input{
+.message_input{
+    font-size: 1rem;
     background-color: var(--bg-input);
     color: var(--textNormal);
 }
@@ -35,6 +36,7 @@ background-color: var(--bg-projects);
    .name_email_inputs{
        background-color: var(--bg-input);
        color: var(--textNormal);
+       font-size: 1rem;
    }
 
 //    input:active{

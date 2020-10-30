@@ -11,6 +11,7 @@
     flex-grow: 1;
 }
 
+//ANIMATION INTRO
 .on_load{
     width: 100vw;
     position: fixed;
@@ -26,21 +27,9 @@
   
   .on_load div{
     font-size: 1.5rem;
-    background-color: #666666;
+    background-color: white;
       -webkit-background-clip: text;
       -moz-background-clip: text;
       background-clip: text;
       color: transparent;
-  }
-
-@media (max-width: 800px) {
-    .main_container{
-        // padding: 1rem 1rem 0 1rem;
-    }
-  }
-
-@media (min-width: 800px) {
-    .main_container{
-        // padding: 2rem 5rem 0 5rem;
-    }
   }
