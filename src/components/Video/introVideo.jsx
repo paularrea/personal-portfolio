@@ -7,6 +7,7 @@ function IntroVideo() {
   return (
     <ReactPlayer
       url={url}
+      playsinline
       playing
       muted
       loop
