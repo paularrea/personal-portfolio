@@ -34,14 +34,8 @@ margin: 0 auto;
   position: absolute;
   top: 8vh !important;
   z-index: 2;
+  font-family: 'Playfair Display', serif;
 
-}
-
-.intro_text{
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 
 //MOBILE BIG,  
@@ -53,18 +47,10 @@ margin: 0 auto;
       height: 70vh;
     }
     .title{
-      font-size: 2rem;
-      top: 0;
+      font-size: 2.7rem;
+      line-height: 3.5rem;
+      top: 5vh !important;
     }
-    .intro_text{
-      margin: 0 auto;
-       width: 80%;
-       bottom: 7rem;
-      } 
-      .intro_text h1{
-        font-size: 1.1rem;
-        line-height: 1.5rem;
-      }
   }
 
 
@@ -87,18 +73,10 @@ margin: 0 auto;
     height: 70vh;
   }
   .title{
-    font-size: 1.7rem;
-    top: 0;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    top: 5vh !important;
   }
-  .intro_text{
-    margin: 0 auto;
-     width: 80%;
-     line-height: 1rem;
-     bottom: 2.5rem;
-    } 
-    .intro_text h1{
-      font-size: 1rem;
-    }
 }
 
   @media (min-width: 700px) {
@@ -109,17 +87,11 @@ margin: 0 auto;
       height: 70vh;
     }
     .title{
-      font-size: 3rem;
+      font-size: 4rem;
+      line-height: 6rem;
       top: 10%;
 
     }
-    .intro_text{
-       width: 65%;
-       bottom: 8rem;
-      } 
-      .intro_text h1{
-        font-size: 1.2rem;
-      }
   }
 
    //IPAD PRO
@@ -131,16 +103,9 @@ margin: 0 auto;
       height: 70vh;
     }
     .title{
-      font-size: 4rem;
+      font-size: 5rem;
       top: 10%;
     }
-    .intro_text{
-       width: 65%;
-       bottom: 14rem;
-      } 
-      .intro_text h1{
-        font-size: 1.5rem;
-      }
   }
 
   @media (min-width: 950px) {
@@ -151,17 +116,10 @@ margin: 0 auto;
       height: 70vh;
     }
     .title{
-      font-size: 4rem;
+      font-size: 5rem;
+      line-height: 7rem;
       top: 0;
     }
-    .intro_text{
-       width: 55%;
-       bottom: 6rem;
-      } 
-      .intro_text h1{
-        font-size: 1.2rem;
-        line-height: 2rem;
-      }
   }
 
   @media (min-width: 1600px) {
@@ -171,13 +129,11 @@ margin: 0 auto;
     .intro{
       height: 50vh;
     }
-    .intro_text{
-       width: 40%;
-       bottom: 9rem;
-      } 
-      .intro_text h1{
-        font-size: 1.2rem;
-      }
+    .title{
+      top: 5vh !important;
+      font-size: 6rem;
+      line-height: 8rem;
+    }
   }
 
  

@@ -42,9 +42,11 @@ animation: animate .5s steps(4) infinite;
     font-size: 1rem;
     background-color: var(--bg-input);
     color: var(--textNormal);
+    margin-top: .3rem;
 }
 
    .name_email_inputs{
+        margin-top: .3rem;
        background-color: var(--bg-input);
        color: var(--textNormal);
        font-size: 1rem;

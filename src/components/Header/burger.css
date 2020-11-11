@@ -42,8 +42,18 @@
    
   /* General sidebar styles */
   .bm-menu {
-    background: var(--bg-menu);
     padding: 2.5rem 1.5rem 0;
+    background-image: var(--bg-img);
+    background-size: cover;
+    animation: animate .5s steps(4) infinite;
+  }
+  @keyframes animate{
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 100% 100%;
+    }
   }
    
   /* Wrapper for item list */
