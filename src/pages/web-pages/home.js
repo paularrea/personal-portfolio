@@ -1,8 +1,8 @@
 import React from "react"
 import IntroVideo from "../../components/Video/introVideo.jsx"
 import styles from "../../styles/home.module.scss"
-import Fade from "react-reveal/Fade"
 import SEO from "../../components/seo"
+import InfiniteSroll from "../../components/infoHome/InfiniteSroll.jsx"
 
 const Home = () => {
   return (
@@ -17,14 +17,8 @@ const Home = () => {
         </h1>
         <IntroVideo />
       </div>
-      <div className={styles.intro_text}>
-        <Fade left delay={2500}>
-          <h1>
-            My name is Pau Larrea, very nice to meet you! Please take a look
-            around.<br/>Here you can find a bit of myself and some of my personal
-            projects.
-          </h1>
-        </Fade>
+      <div className={styles.intro_infinite}>
+      <InfiniteSroll/>
       </div>
     </div>
   )

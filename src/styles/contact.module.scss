@@ -4,6 +4,17 @@ width: 100%;
 height: auto;
 padding: 5% 0;
 background-color: var(--bg-projects);
+background-image: var(--bg-img2);
+background-size: cover;
+animation: animate .5s steps(4) infinite;
+}
+@keyframes animate{
+0%{
+  background-position: 0 0;
+}
+100%{
+  background-position: 100% 100%;
+}
 }
 
 .email_container{

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import headerStyles from "./header.module.scss"
 import Uv from "../UvToggle/uv"
 import Burger from "./burger"
@@ -6,56 +6,64 @@ import Media from "react-media"
 import TransitionLink from "gatsby-plugin-transition-link"
 
 const Header = () => {
-  const [homeUnderline, setHomeUnderline] = useState(false);
-  const [projectsUnderline, setProjectsUnderline] = useState(false);
-  const [aboutUnderline, setAboutUnderline] = useState(false);
-  const [contactUnderline, setContactUnderline] = useState(false);
+  const [homeUnderline, setHomeUnderline] = useState(false)
+  const [projectsUnderline, setProjectsUnderline] = useState(false)
+  const [aboutUnderline, setAboutUnderline] = useState(false)
+  const [contactUnderline, setContactUnderline] = useState(false)
 
   useEffect(() => {
     const changeUnderline = () => {
       console.log(window.scrollY)
-      if (window.scrollY < 90 * window.innerHeight/100)  {
-        setHomeUnderline(true);
-        setProjectsUnderline(false);
-        setAboutUnderline(false);
-        setContactUnderline(false);
-      } else if (window.scrollY > 90 * window.innerHeight/100 && window.scrollY < 180 * window.innerHeight/100) {
-        setHomeUnderline(false);
-        setProjectsUnderline(true);
-        setAboutUnderline(false);
-        setContactUnderline(false);
-      } else if (window.scrollY > 180 * window.innerHeight/100 && window.scrollY < 260 * window.innerHeight/100)  {
-        setHomeUnderline(false);
-        setProjectsUnderline(false);
-        setAboutUnderline(true);
-        setContactUnderline(false);
-      } else if (window.scrollY > 260 * window.innerHeight/100 && window.scrollY < 320 * window.innerHeight/100)  {
-        setHomeUnderline(false);
-        setProjectsUnderline(false);
-        setAboutUnderline(false);
-        setContactUnderline(true);
+      if (window.scrollY < (90 * window.innerHeight) / 100) {
+        setHomeUnderline(true)
+        setProjectsUnderline(false)
+        setAboutUnderline(false)
+        setContactUnderline(false)
+      } else if (
+        window.scrollY > (90 * window.innerHeight) / 100 &&
+        window.scrollY < (180 * window.innerHeight) / 100
+      ) {
+        setHomeUnderline(false)
+        setProjectsUnderline(true)
+        setAboutUnderline(false)
+        setContactUnderline(false)
+      } else if (
+        window.scrollY > (180 * window.innerHeight) / 100 &&
+        window.scrollY < (260 * window.innerHeight) / 100
+      ) {
+        setHomeUnderline(false)
+        setProjectsUnderline(false)
+        setAboutUnderline(true)
+        setContactUnderline(false)
+      } else if (
+        window.scrollY > (260 * window.innerHeight) / 100 &&
+        window.scrollY < (320 * window.innerHeight) / 100
+      ) {
+        setHomeUnderline(false)
+        setProjectsUnderline(false)
+        setAboutUnderline(false)
+        setContactUnderline(true)
       }
-    };
-    window.addEventListener("scroll", changeUnderline);
-  }, []);
+    }
+    window.addEventListener("scroll", changeUnderline)
+  }, [])
 
   return (
     <div>
       <header id="navbar" className={headerStyles.header}>
         <Media query={{ minWidth: 950 }}>
           <nav>
-            <ul
-              className={headerStyles.navList}
-              style={{
-                backgroundColor: "var(--bg)",
-              }}
-            >
+            <ul className={headerStyles.navList}>
               <li>
                 <TransitionLink
                   entry={{
                     delay: 0.3,
                   }}
-                    className={homeUnderline ? headerStyles.activeNavItem : headerStyles.navItem }
+                  className={
+                    homeUnderline
+                      ? headerStyles.activeNavItem
+                      : headerStyles.navItem
+                  }
                   activeClassName={headerStyles.activeNavItem}
                   to="/#home"
                 >
@@ -67,7 +75,11 @@ const Header = () => {
                   entry={{
                     delay: 0.3,
                   }}
-                    className={projectsUnderline ? headerStyles.activeNavItem : headerStyles.navItem }
+                  className={
+                    projectsUnderline
+                      ? headerStyles.activeNavItem
+                      : headerStyles.navItem
+                  }
                   activeClassName={headerStyles.activeNavItem}
                   to="/#projects"
                 >
@@ -79,7 +91,11 @@ const Header = () => {
                   entry={{
                     delay: 0.3,
                   }}
-                  className={aboutUnderline ? headerStyles.activeNavItem : headerStyles.navItem }
+                  className={
+                    aboutUnderline
+                      ? headerStyles.activeNavItem
+                      : headerStyles.navItem
+                  }
                   activeClassName={headerStyles.activeNavItem}
                   to="/#about"
                 >
@@ -91,7 +107,11 @@ const Header = () => {
                   entry={{
                     delay: 0.3,
                   }}
-                    className={contactUnderline ? headerStyles.activeNavItem : headerStyles.navItem }
+                  className={
+                    contactUnderline
+                      ? headerStyles.activeNavItem
+                      : headerStyles.navItem
+                  }
                   activeClassName={headerStyles.activeNavItem}
                   to="/#contact"
                 >

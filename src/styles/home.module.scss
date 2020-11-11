@@ -3,7 +3,23 @@
   margin: 0 auto;
   width: 100vw;
   height: 100vh !important;
-  background-color: var(--bg);
+  // background-color: var(--bg);
+  background-image: var(--bg-img);
+  background-size: cover;
+  animation: animate .5s steps(4) infinite;
+}
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 100% 100%;
+  }
+}
+
+.intro_infinite{
+  position: absolute;
+  bottom: 15%;
 }
 
 .intro{

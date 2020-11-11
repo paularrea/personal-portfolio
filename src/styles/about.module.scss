@@ -5,7 +5,18 @@
     padding: 5% 10%;
     background-color: var(--bg);
     z-index: 1;
-}
+    background-image: var(--bg-img);
+    background-size: cover;
+    animation: animate .5s steps(4) infinite;
+  }
+  @keyframes animate{
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 100% 100%;
+    }
+  }
 
 .component_title{
     font-size: 2rem;

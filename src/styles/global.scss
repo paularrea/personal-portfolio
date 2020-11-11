@@ -3,6 +3,8 @@
 
 body {
     --bg: white;
+    --bg-img: url(../images/white-bg.png);
+    --bg-img2: url(../images/whiterbg.png);
     --bg-footer: whitesmoke;
     --bg-projects:whitesmoke;
     --bg-container:#cecece;
@@ -37,6 +39,8 @@ body {
     -webkit-font-smoothing: antialiased;
   
     --bg: #181818;
+    --bg-img: url(../images/blackbg.png);
+    --bg-img2: url(../images/blackerbg.png);
     --bg-footer: #181818;
     --bg-projects:black;
     --bg-container:#616161;
