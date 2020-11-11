@@ -19,7 +19,7 @@
 
 .intro_infinite{
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
 }
 
 .intro{
@@ -42,6 +42,9 @@ margin: 0 auto;
   @media (max-width: 600px) {
     .container{
       padding-top: 2rem;
+      background-color: var(--bg);
+      background-image: none;
+      animation: none;
     }
     .intro{
       height: 70vh;
