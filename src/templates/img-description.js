@@ -1,9 +1,7 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from "react"
+import { graphql } from "gatsby"
 import Fade from "react-reveal/Fade"
-import { MDXRenderer } from "gatsby-plugin-mdx";
-import Layout from "../components/Layout/layout";
-
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 export default ({
   data: {
@@ -11,13 +9,11 @@ export default ({
   },
 }) => {
   return (
-    <Layout>
-      <Fade>
+    <Fade>
       <MDXRenderer>{body}</MDXRenderer>
-      </Fade>
-    </Layout>
-  );
-};
+    </Fade>
+  )
+}
 
 export const query = graphql`
   query MDXBySlug($slug: String!) {
@@ -25,4 +21,4 @@ export const query = graphql`
       body
     }
   }
-`;
+`

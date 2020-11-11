@@ -5,8 +5,12 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--bg);
     justify-content: center;
+    background: transparent;
+}
+.title{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem !important;
 }
 
 .bold{
@@ -83,7 +87,7 @@ width: 100%;
             }
         }
         .title{
-            font-size: 1.5rem;
+            font-size: 2rem !important;
             padding: 1rem;
             padding-bottom: 0;
         }
