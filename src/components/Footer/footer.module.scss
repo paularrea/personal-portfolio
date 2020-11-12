@@ -1,8 +1,19 @@
 .container{
     width: 100%;
-    background-color:var(--bg-footer);
     color: var(--textNormal);
-}
+    background-color: var(--bg);
+    background-image: var(--bg-img);
+    background-size: cover;
+    animation: animate .5s steps(4) infinite;
+  }
+  @keyframes animate{
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 100% 100%;
+    }
+  }
 
 .content{
     display: flex;
