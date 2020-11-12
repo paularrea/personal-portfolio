@@ -29,6 +29,7 @@ html, #root{
 body {
   margin: 0;
   background-image: var(--bg-img);
+  background-color: var(--bg);
   background-size: cover;
   animation: animate .5s steps(4) infinite;
 }
@@ -48,10 +49,10 @@ a{
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
-body{
-  background-color: var(--bg);
-  background-image: none;
-  animation: none;
-}
-}
+// @media (max-width: 600px) {
+// body{
+//   background-color: var(--bg);
+//   background-image: none;
+//   animation: none;
+// }
+// }

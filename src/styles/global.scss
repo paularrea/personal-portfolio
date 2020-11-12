@@ -2,9 +2,8 @@
 
 
 body {
-    --bg: white;
-    --bg-img: url(../images/whiterbg.png);
-    --bg-img2: url(../images/white-bg.png);
+    --bg: rgb(238, 235, 226);
+    --bg-img: url(../images/whitenoise.png);
     --bg-footer: whitesmoke;
     --bg-projects:whitesmoke;
     --bg-container:#cecece;
@@ -38,9 +37,8 @@ body {
   body.dark {
     -webkit-font-smoothing: antialiased;
   
-    --bg: #181818;
-    --bg-img: url(../images/blackbg.png);
-    --bg-img2: url(../images/blackbg2.png);
+    --bg: #242424;
+    --bg-img: url(../images/noise.png);
     --bg-footer: #181818;
     --bg-projects:black;
     --bg-container:#acacac;
