@@ -15,57 +15,103 @@
     }
   }
 
+
 .content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:transparent;
-    color: var(--textNormal)
+  max-width: 1200px;
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+  padding: 2vw 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color:transparent;
+  color: var(--textImportant);
+  p, a {
+      margin: .3vw 0;
+      color: var(--textNormal);
+      font-size: 14px;
+    }
+    a:hover{
+      color: inherit;
+      text-decoration: inherit;
+      font-weight: bolder;
+      
+  }
+  h3{
+      font-size: 16px;
+  }
+  .contentOne{
+      display: flex;
+      justify-content: space-between;
+      justify-items: right;
+      align-items: flex-start;
+      div{
+          width: 15vw;
+      }
+  }
 }
-.icons{
-    display: flex;
-    justify-content: space-between;
+
+
+.navList{
+  list-style-type: none;
+  padding: 0;
+  li, a{
+      margin: .3vw 0;
+      color: var(--textNormal);
+      font-size: 14px;
+  }
+  li:hover{
+      font-weight: bolder;
+  }
+  a:hover{
+    font-weight: bolder;
+}
+}
+
+.name{
+  h2{
+      font-size: 25px;
+  }
+}
+
+.media{
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright{
+  position: absolute;
+  bottom: 2vw;
 }
 
 .container a{
-    color: var(--textNormal);
-    text-decoration:none;
+  color: var(--textNormal);
+  text-decoration:none;
 }
 
-.normal_link{
-    color: var(--normal-link);
+@media (max-width: 850px) {
+
+  .content{
+      display: block;
+      max-width: 100%;
+      height: auto;
+      padding: 1rem;
+      padding-bottom: 3rem;
+      .contentOne{
+          display: flex;
+          flex-direction: column;
+          div{
+              width: 60vw;
+              padding: 1rem 0;
+              height: auto;
+          }
+      }
   }
-  
-  .normal_link:hover{
-    font-weight: bolder;
+  .copyright{
+      position: absolute;
+      bottom: 1rem;
   }
 
-  @media (max-width: 700px) {
-    .content div{
-        font-size: 4vw;
-    }
-    .container a{
-        margin-right: 2vw;
-    }
-    .container{
-        padding: 1rem 2rem;
-        height: 10vh;
-    }
-    
-  }
-
-@media (min-width: 700px) {
-    .content div{
-        font-size: 1rem;
-    }
-    .container{
-        padding: 1rem 6rem;
-    }
-    .icons{
-        width: 10vw;
-    }
-    .container a{
-        margin-right: 2vw;
-    }
-    
-  }
+}

@@ -1,10 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import LinkedInIcon from "@material-ui/icons/LinkedIn"
-import GitHubIcon from "@material-ui/icons/GitHub"
-import InstagramIcon from "@material-ui/icons/Instagram"
-
 import footerStyles from "./footer.module.scss"
+import TransitionLink from "gatsby-plugin-transition-link"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -20,38 +17,92 @@ const Footer = () => {
     <footer>
       <div className={footerStyles.container}>
         <div className={footerStyles.content}>
-          <div>
-          © {new Date().getFullYear()}, by
-          {` `}
-          {data.site.siteMetadata.author}
+          <div className={footerStyles.name}>
+            <h2>PAU LARREA</h2>
+            <div className={footerStyles.copyright}>
+              <p>
+                © {new Date().getFullYear()}, by
+                {` `}
+                {data.site.siteMetadata.author}.<br /> All Rights Reserved.
+              </p>
+            </div>
           </div>
-          <div className={footerStyles.icons}>
+          <div className={footerStyles.contentOne}>
             <div>
-              <a
+              <h3>Explore</h3>
+              <ul className={footerStyles.navList}>
+                <li>
+                  <TransitionLink
+                    entry={{
+                      delay: 0.3,
+                    }}
+                    to="/#home"
+                  >
+                    Home
+                  </TransitionLink>
+                </li>
+                <li>
+                  <TransitionLink
+                    entry={{
+                      delay: 0.3,
+                    }}
+                    to="/#projects"
+                  >
+                    Projects
+                  </TransitionLink>
+                </li>
+                <li>
+                  <TransitionLink
+                    entry={{
+                      delay: 0.3,
+                    }}
+                    to="/#about"
+                  >
+                    About
+                  </TransitionLink>
+                </li>
+                <li>
+                  <TransitionLink
+                    entry={{
+                      delay: 0.3,
+                    }}
+                    to="/#contact"
+                  >
+                    Contact
+                  </TransitionLink>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <p>Gmail</p>
+              <p>+34 638 30 54 14</p>
+            </div>
+            <div>
+              <h3>Media</h3>
+              <div className={footerStyles.media}>
+                <a
                 className={footerStyles.normal_link}
                 href="https://github.com/paularrea"
                 target="blank"
               >
-                <GitHubIcon />
+                Github
               </a>
-            </div>
-            <div>
-              <a
-                className={footerStyles.normal_link}
-                href="https://www.instagram.com/paularrea"
-                target="blank"
-              >
-                <InstagramIcon />
-              </a>
-            </div>
-            <div>
               <a
                 className={footerStyles.normal_link}
                 href="https://www.linkedin.com/in/pau-larrea/"
                 target="blank"
               >
-                <LinkedInIcon />
+                LinkedIn
               </a>
+              <a
+                className={footerStyles.normal_link}
+                href="https://www.instagram.com/paularrea/?hl=es"
+                target="blank"
+              >
+                Instagram
+              </a>
+              </div>
             </div>
           </div>
         </div>
