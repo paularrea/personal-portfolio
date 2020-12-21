@@ -13,7 +13,7 @@ const Layout = props => {
   useEffect(() => {
     const intro = setTimeout(() => {
       setCloseIntro(true)
-    }, 2000)
+    }, 2500)
     return () => clearTimeout(intro)
   }, [])
 
@@ -25,7 +25,7 @@ const Layout = props => {
     <>
          {!closeIntro && (
         <div className={layoutStyles.on_load}>
-          <Fade top>
+          <Fade >
             <div className={layoutStyles.animation}>Pau Larrea .</div>
           </Fade>
         </div>

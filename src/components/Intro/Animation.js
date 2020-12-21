@@ -6,7 +6,7 @@ const Animation = () => {
   
   return (
     <div className={style.on_load}>
-      <Fade top>
+      <Fade >
         <div className={style.animation}>Pau Larrea.</div>
       </Fade>
     </div>
