@@ -40,6 +40,7 @@ function gmImg() {
           time is over the pokemon is reveled and a messege will tell you if
           your answer is correct or incorrect.
         </p>
+        <br />
         <h1>Challenge and technologies</h1>
         <p>
           As a user you have access to the pokedex where all pokemons are
@@ -47,6 +48,9 @@ function gmImg() {
           <span className={style.bold}> Vanilla JS</span>.
         </p>
       </div>
+      <Link className={style.link} to="/#projects">
+        Back to projects
+      </Link>
       <div className={style.row}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/pokemon%2Fcarousel-pokemon1.png?alt=media&token=9ebe38bc-48aa-4854-a04a-511bf4365601"
@@ -57,9 +61,7 @@ function gmImg() {
           alt="pokemon project two"
         />
       </div>
-      <Link className={style.link} to="/#projects">
-        Back to projects
-      </Link>
+    
     </dir>
   )
 }

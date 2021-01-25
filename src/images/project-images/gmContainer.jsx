@@ -36,6 +36,7 @@ function gmImg() {
           join them or create your own movement and involve people. Always with
           the intention of changing the world for the better.
         </p>
+        <br />
         <h1>Challenge and technologies</h1>
         <p>
           This was my first <span className={style.bold}>MERN stack</span>{" "}
@@ -48,6 +49,9 @@ function gmImg() {
           Deployed with <span className={style.bold}>heroku</span>.
         </p>
       </div>
+      <Link className={style.link} to="/#projects">
+        Back to projects
+      </Link>
       <div className={style.row}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/greenmove%2Fgreen-move1.png?alt=media&token=2a134d8c-97ba-4df6-a827-2ad4b28d386d"
@@ -62,9 +66,7 @@ function gmImg() {
           alt="greenmove project three"
         />
       </div>
-      <Link className={style.link} to="/#projects">
-        Back to projects
-      </Link>
+
     </dir>
   )
 }

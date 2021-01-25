@@ -36,6 +36,7 @@ function gmImg() {
           products between people, using photographies, drawings, decoration
           items, etc., as currency.
         </p>
+        <br />
         <h1>Challenge and technologies</h1>
         <p>
           The platform consists of a responsive <span className={style.bold}>MERN stack</span> web application made
@@ -46,6 +47,9 @@ function gmImg() {
           <span className={style.bold}> MongoDB</span> for storing user data. Deployed with <span className={style.bold}>heroku</span>. pair programming.
         </p>
       </div>
+      <Link className={style.link} to="/#projects">
+        Back to projects
+      </Link>
       <div className={style.row}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/swapit%2Fsw1.png?alt=media&token=2117ea13-44cd-4bdb-945d-affc67fa0cc5"
@@ -60,7 +64,7 @@ function gmImg() {
         alt="swapit project three"
         />
         </div>
-        <Link className={style.link} to='/#projects'>Back to projects</Link>
+ 
     </dir>
   )
 }
