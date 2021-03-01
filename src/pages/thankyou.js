@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/contact.module.scss";
-import Layout from "../components/layout/layout";
+import Layout from "../components/Layout/layout";
 import { Link } from "gatsby";
 
 const Thankyou = () => {

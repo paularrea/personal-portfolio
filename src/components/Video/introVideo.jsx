@@ -1,7 +1,5 @@
 import React from "react"
 import videoStyle from "./introVideo.module.scss"
-// import ReactPlayer from "react-player/lazy"
-// import url from "../../../static/JOSIE.mp4"
 
 function IntroVideo() {
   return (
