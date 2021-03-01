@@ -1,7 +1,8 @@
 .video{
     position: absolute;
-    height: auto !important;
-    top: 30%;
+    height: auto;
+    width: 500px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -12,39 +13,34 @@
 //mobile
 @media (max-width: 500px) {
 .video{
-    width: 80vw !important;
-    top: 20%;
-    left: 10vw
-
+  top: 130px;
+  left: -15px;
+  width: 400px;
+  height: 240px;
 }
 } 
 
 //ipad
 @media (min-width: 700px) {
 .video{
-    width: 65vw !important;
-    top: 40%;
+  top: 250px;
+  width: 450px;
+  height: 400px;
 }
-  }
-
-//IPAD PRO
-  @media (min-width: 1000px) and (max-height: 1400px) {
-    .video{
-      width: 65vw !important;
-    }
-  }
+}
 
 //desktop
 @media (min-width: 1000px) {
 .video{
-  width: 55vw !important;
-  top: 30%;
+  top: 300px;
+  width: 600px;
+  height: 400px;
 }
   }
 
   @media (min-width: 1600px) {
 .video{
-  width: 40vw !important;
+
 }
     
   }

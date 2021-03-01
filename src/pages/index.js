@@ -6,6 +6,7 @@ import About from "./web-pages/about"
 import Contact from "./web-pages/contact"
 import Projects from "./web-pages/projects"
 import SEO from "../components/seo"
+import Footer from "../components/Footer/footer"
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
         <Projects />
         <About />
         <Contact />
+        <Footer/>
       </Layout>
     </>
   )

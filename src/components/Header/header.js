@@ -21,23 +21,23 @@ const Header = () => {
         setContactUnderline(false)
       } else if (
         window.scrollY > (90 * window.innerHeight) / 100 &&
-        window.scrollY < (180 * window.innerHeight) / 100
+        window.scrollY < (250 * window.innerHeight) / 100
       ) {
         setHomeUnderline(false)
         setProjectsUnderline(true)
         setAboutUnderline(false)
         setContactUnderline(false)
       } else if (
-        window.scrollY > (180 * window.innerHeight) / 100 &&
-        window.scrollY < (260 * window.innerHeight) / 100
+        window.scrollY > (250 * window.innerHeight) / 100 &&
+        window.scrollY < (350 * window.innerHeight) / 100
       ) {
         setHomeUnderline(false)
         setProjectsUnderline(false)
         setAboutUnderline(true)
         setContactUnderline(false)
       } else if (
-        window.scrollY > (260 * window.innerHeight) / 100 &&
-        window.scrollY < (320 * window.innerHeight) / 100
+        window.scrollY > (350 * window.innerHeight) / 100 &&
+        window.scrollY < (370 * window.innerHeight) / 100
       ) {
         setHomeUnderline(false)
         setProjectsUnderline(false)

@@ -17,7 +17,7 @@
 
 .nav-list{
     display: flex;
-    width: 80%;
+    width: 70%;
     list-style-type: none;
     margin: 0 auto;
     padding-inline-start: 0;
@@ -26,8 +26,9 @@
 }
 
 .nav-item {
-    color: var(--btn);
-    font-size: 1rem;
+    color: var(--nav-item);
+    font-size: 14px;
+    font-weight: 700;
     text-decoration: none !important;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -41,8 +42,10 @@
 
 .active-nav-item {
     text-decoration: none !important;
+    font-weight: 700;
+    font-size: 15px;
     color: var(--active-btn);
-    padding-bottom: .5vh;
+    padding-bottom: 1px;
     border-bottom: 2px solid var(--active-btn);
 }
 

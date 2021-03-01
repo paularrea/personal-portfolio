@@ -18,7 +18,7 @@ const Footer = () => {
       <div className={footerStyles.container}>
         <div className={footerStyles.content}>
           <div className={footerStyles.name}>
-            <h2>PAU LARREA</h2>
+            <h2>Pau Larrea.</h2>
             <div className={footerStyles.copyright}>
               <p>
                 © {new Date().getFullYear()}, by
@@ -79,29 +79,29 @@ const Footer = () => {
               <p>+34 638 30 54 14</p>
             </div>
             <div>
-              <h3>Media</h3>
               <div className={footerStyles.media}>
+                <h3>Media</h3>
                 <a
-                className={footerStyles.normal_link}
-                href="https://github.com/paularrea"
-                target="blank"
-              >
-                Github
-              </a>
-              <a
-                className={footerStyles.normal_link}
-                href="https://www.linkedin.com/in/pau-larrea/"
-                target="blank"
-              >
-                LinkedIn
-              </a>
-              <a
-                className={footerStyles.normal_link}
-                href="https://www.instagram.com/paularrea/?hl=es"
-                target="blank"
-              >
-                Instagram
-              </a>
+                  className={footerStyles.normal_link}
+                  href="https://github.com/paularrea"
+                  target="blank"
+                >
+                  Github
+                </a>
+                <a
+                  className={footerStyles.normal_link}
+                  href="https://www.linkedin.com/in/pau-larrea/"
+                  target="blank"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  className={footerStyles.normal_link}
+                  href="https://www.instagram.com/paularrea/?hl=es"
+                  target="blank"
+                >
+                  Instagram
+                </a>
               </div>
             </div>
           </div>

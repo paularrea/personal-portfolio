@@ -35,7 +35,6 @@ const Layout = props => {
         <Header />
         <main className={layoutStyles.main_container}>{props.children}</main>
       </div>
-      <Footer />
     </div>
     </>
   )

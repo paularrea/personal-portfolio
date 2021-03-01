@@ -20,7 +20,7 @@
 }
 
 .img {
-    height: 30vh;
+    height: 40vh;
     width: auto;
     -webkit-transition: all 0.5s ease-out;
         -moz-transition: all 0.5s ease-out;
@@ -46,13 +46,14 @@
   transition: all 0.5s ease-out !important;
     text-align: left;
     margin-bottom: 1.2rem;
+    padding: .5rem;
     position: absolute;
     bottom: 5%;
     background-color: var(--bg-title-projects);
     left: -10%;
     z-index: 9999;
     width: auto;
-    max-width: 10vw;
+    max-width: 15vw;
     border-bottom: 4px solid var(--textNormal);
   }
   

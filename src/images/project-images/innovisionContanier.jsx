@@ -4,29 +4,42 @@ import GitHubIcon from "@material-ui/icons/GitHub"
 import { Link } from "gatsby"
 import SEO from "../../components/seo"
 
-function gmImg() {
+function innoComponent() {
   return (
-    <dir className={style.container}>
+    <div className={style.container}>
       <SEO
         title="Swap it!"
         description="InnoVision Medical is a professional and innovative company specialized in producing medical devices and personal protective equipment."
       />
-      <h1 className={style.title}>Innovision Medical</h1>
-      <div className={style.container_icons}>
-        <div>
-          <a
-            className={style.site}
-            href="https://www.innovision-medical.com/"
-            target="blank"
-          >
-            Visit site
-          </a>
+      <div className={style.title}>
+        <h1>Innovision Medical</h1>
+        <h5>Platform to promote environmental and social projects</h5>
+        <div className={style.container_icons}>
+          <div>
+            <a
+              className={style.site}
+              href="https://www.innovision-medical.com/"
+              target="blank"
+            >
+              Visit site
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/paularrea/innovision" target="blank">
+              <GitHubIcon />
+            </a>
+          </div>
         </div>
-        <div>
-          <a href="https://github.com/paularrea/innovision" target="blank">
-            <GitHubIcon />
-          </a>
-        </div>
+      </div>
+      <div className={style.row}>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/innovision%2FMockups.png?alt=media&token=ed90fe3e-ec57-49bc-b7a2-a1c79a9f23eb"
+          alt="innovision project one"
+        />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/innovision%2FMockups-1.png?alt=media&token=bc67205d-0fed-43a9-b7d3-fa844751b876"
+          alt="innvision project two"
+        />
       </div>
       <div className={style.description}>
         <h1>About the project</h1>
@@ -46,23 +59,12 @@ function gmImg() {
           <span className={style.bold}>CSS</span> and{" "}
           <span className={style.bold}>Bootstrap</span>.
         </p>
+        <Link className={style.link} to="/#projects">
+          Back to projects
+        </Link>
       </div>
-      <Link className={style.link} to="/#projects">
-        Back to projects
-      </Link>
-      <div className={style.row}>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/innovision%2Finnovision-1.png?alt=media&token=b712a450-9593-415b-afb5-090a1899efbb"
-          alt="innovision project one"
-        />
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/innovision%2Finnovision-2.png?alt=media&token=d50482ab-94a5-4d1d-9485-f98cbc3d18b5"
-          alt="innvision project two"
-        />
-      </div>
-    
-    </dir>
+    </div>
   )
 }
 
-export default gmImg
+export default innoComponent

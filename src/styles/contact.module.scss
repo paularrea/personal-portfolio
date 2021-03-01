@@ -1,8 +1,7 @@
 /* email */
 .container{
 width: 100%;
-height: auto;
-padding: 5% 0;
+height: 100vh;
 background-color: var(--bg-projects);
 background-image: var(--bg-img);
 background-size: cover;
@@ -18,50 +17,57 @@ animation: animate .5s steps(4) infinite;
 }
 
 .email_container{
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 5%;
+    height: 100%;
+    padding: 10%;
     color: var(--textNormal);
     background-color: transparent;
-    border: 1px solid var(--textNormal);
-    
 }
 
 .email_wrapper h1{
     text-align: left;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 70px;
+    margin: 5rem 0;
 }
 
 .email_form_title{
     width: 100%;
+    margin-bottom: 2rem;
     color: var(--textNormal);
     margin: 0;
 }
 
 .message_input{
+    border: none;
+    outline: none;
     font-size: 1rem;
-    background-color: var(--bg-input);
+    background-color: transparent;
+    border-bottom: 1px solid var(--textNormal);
     color: var(--textNormal);
-    margin-top: .3rem;
+    margin-top: 1rem;
+    width: 65%;
+    margin-top: 2rem;
 }
 
    .name_email_inputs{
-        margin-top: .3rem;
-       background-color: var(--bg-input);
-       color: var(--textNormal);
-       font-size: 1rem;
+    outline: none;
+    width: 30%;
+    margin-right: 5%;
+    border: none;
+    border-bottom: 1px solid var(--textNormal);
+    background-color: transparent;
+    color: var(--textNormal);
+    font-size: 1rem;
    }
-
-//    input:active{
-//        outline: var(--switcher);
-//    }
-
    .btn_container{
-       display: flex;
-       justify-content: center;
+    display: flex;
+    justify-content: left;
+    margin: 2vh 0;
+    margin-top: 5rem;
    }
-   
-   .btn{
+
+    .btn{
+    padding: .5rem 2rem;
     background-color: transparent;
     border: 1px solid var(--textNormal) !important ;
     color:var(--textNormal);
@@ -76,17 +82,46 @@ animation: animate .5s steps(4) infinite;
     vertical-align: top !important;
   }
   
+  /* Thank you message */
+.bg-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-img);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-container{
+    width: auto;
+    background-color: var(--bg-img);
+    padding: 2rem 4rem;
+    margin-bottom: 15rem;
+}
+.message-container h1{
+    font-size: 24px;
+    color: var(--textTitle);
+    margin: 0;
+}
+.message-container p{
+    padding-top: 1rem;
+    font-size: 16px;
+    color: var(--textNormal);
+    margin: 0;
+}
+
 
   @media (max-width: 800px) {
     .email_container{
-        margin-top: 8vw;
-        width: 90vw;
+        padding: 5%;
     }
+    
     .email_form_title{
         font-size: 1rem;
+        padding-top: 2rem;
     }
     .email_wrapper h1{
-        text-align: center;
+        text-align: left;
+        font-size: 60px;
     }
     .name_email_wrapper{
         display: flex;
@@ -94,74 +129,31 @@ animation: animate .5s steps(4) infinite;
         justify-content: left;
     }
     .email_wrapper{
-        padding: 2vh;
         width: 100%;
     }
     .name_email_inputs{
         width: 100%;
         height: 6vh;
-        border: none;
         padding: 2% 5%;
+        padding-left: 0;
     }
     .message_input{
         padding: 2% 5%;
-        border: none;
+        padding-left: 0;
         width: 100%;
-        height: 25vh;
-        margin-bottom: 2vh;
+        height: 6vh;
+        margin: 2vh 0;
     }
     .btn_container{
         display: flex;
-        justify-content: center;
+        justify-content: left;
         margin: 2vh 0;
+        margin-top: 5rem;
     }
     .btn{
-        padding: 3vw 6vw;
+        padding: .5rem 2rem;
       }
     input{
         margin-bottom: 2vh ;
     }
-  }
-
-@media (min-width: 800px) {
-    .email_container{
-        width: 50%;
-        height: auto;
-        margin: 0 auto;
-        margin-top: 4vw;
-        margin-bottom: 5%;
-    }
-    .email_form_title{
-        margin-top: 2vw;
-        font-size: 2rem;
-    }
-    .name_email_wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .email_wrapper{
-        width: 40vw;
-        padding: 5% 0;
-        margin: 0 auto;
-    }
-    .name_email_inputs{
-        width: 15vw;
-        border: none;
-        padding: 1%;
-        margin: 2vh 0 5vh 0 ;
-    }
-    .message_input{
-        width: 100%;
-        padding: 1%;
-        border: none;
-        padding-bottom: 15%;
-        margin-bottom: 5vh;
-    }
-    .btn{
-        padding: 1vw 4vw;
-        -webkit-transition: all 0.5s ease-out;
-        -moz-transition: all 0.5s ease-out;
-        transition: all 0.5s ease-out !important;
-      }
   }
