@@ -122,6 +122,8 @@ animation: animate .5s steps(4) infinite;
   @media (max-width: 800px) {
     .container{
         height: auto;
+        animation: none;
+        background-image: none;
     }
     .bg-container{
         height: auto;

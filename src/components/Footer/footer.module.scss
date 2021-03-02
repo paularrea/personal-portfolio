@@ -94,6 +94,12 @@
 
 @media (max-width: 850px) {
 
+  .container{
+    animation: none;
+    background-image: none;
+    padding: 3rem 0;
+  }
+
   .content{
       display: block;
       max-width: 100%;
