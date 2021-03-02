@@ -19,7 +19,8 @@
   }
 
 .component_title{
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: 70px;
     margin-bottom: 4vh;
   }
 
@@ -87,6 +88,9 @@
 }
 
 @media (max-width: 800px) {
+    .component_title{
+        font-size: 60px;
+    }
     .description p{
         font-size: 1rem;
     }

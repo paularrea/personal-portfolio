@@ -3,22 +3,23 @@
 }
 
 .letscreate{
-    font-size: 3rem;
+    font-size: 50px;
+    font-weight: 700;
     margin: 0;
 }
 
 .create{
-    font-size: 3rem;
+    font-size: 50px;
     background-color: var(--create);
     color: var(--color-btn-hover);
     padding: 0 .5rem;
     margin-right: .4rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .reach_me{
     color: var(--btn);
-    margin:0;
+    margin: 1rem 0;
 }
 
 
@@ -54,11 +55,20 @@ margin-top: 2rem;
   
   @media (max-width: 700px) {
     .container{
-        margin: 3vh 0;
         height: auto;
+        margin: 4rem 0;
     }
+    .letscreate{
+        font-size: 40px;
+    }
+    
+    .create{
+        font-size: 40px;
+    }
+    
     .reach_me{
         font-size: 1rem;
+        margin: 1rem 0;
     }
     .links_container{
         margin-top: 1rem;
@@ -79,12 +89,4 @@ margin-top: 2rem;
         padding: 1vw;
         font-size: .9rem;
     }
-}
-
-@media (min-width: 700px) {
-   
-    .reach_me{
-        font-size: 1.5rem;
-    }
-    
 }

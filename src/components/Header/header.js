@@ -83,7 +83,7 @@ const Header = () => {
                   activeClassName={headerStyles.activeNavItem}
                   to="/#projects"
                 >
-                  PROJECTS
+                  WORK
                 </TransitionLink>
               </li>
               <li>

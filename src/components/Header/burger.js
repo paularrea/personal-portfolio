@@ -45,7 +45,7 @@ class Burger extends React.Component {
           className={style.menu_item}
           onClick={() => this.closeMenu()}
         >
-          Projects
+          Work
         </TransitionLink>
         <TransitionLink
           entry={{

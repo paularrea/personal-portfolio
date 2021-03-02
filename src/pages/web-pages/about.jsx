@@ -51,7 +51,7 @@ const About = () => {
             I'm not coding or pushing pixels, you'll find me surfing or
             traveling around."
       />
-      <h1 className={style.component_title}>ABOUT</h1>
+      <h1 className={style.component_title}>About</h1>
       <div className={style.description}>
         <p>
           Hi I am Pau, a frontend developer passionate about building beautiful

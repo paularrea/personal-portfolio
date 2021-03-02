@@ -67,7 +67,7 @@ animation: animate .5s steps(4) infinite;
    }
 
     .btn{
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
     background-color: transparent;
     border: 1px solid var(--textNormal) !important ;
     color:var(--textNormal);
@@ -83,34 +83,49 @@ animation: animate .5s steps(4) infinite;
   }
   
   /* Thank you message */
-.bg-container{
+.bg_container{
     width: 100vw;
     height: 100vh;
-    background-color: var(--bg-img);
+    background-color: var(--bg-projects);
+    background-image: var(--bg-img);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    background-size: cover;
+    animation: animate .5s steps(4) infinite;
 }
-.message-container{
+.message_container{
     width: auto;
-    background-color: var(--bg-img);
-    padding: 2rem 4rem;
-    margin-bottom: 15rem;
+    padding: 0;
+    padding-top: 15%;
+    h1{
+        font-size: 70px;
+        font-weight: 700;
+        color: var(--textTitle);
+        margin: 0;
+    }
+    p{
+        padding: 2rem 0;
+        padding-left: 1rem;
+        font-size: 16px;
+        color: var(--textNormal);
+        margin: 0;
+    }
+    a{
+        margin-left: 1rem;
+
+    }
 }
-.message-container h1{
-    font-size: 24px;
-    color: var(--textTitle);
-    margin: 0;
-}
-.message-container p{
-    padding-top: 1rem;
-    font-size: 16px;
-    color: var(--textNormal);
-    margin: 0;
-}
+
 
 
   @media (max-width: 800px) {
+    .container{
+        height: auto;
+    }
+    .bg-container{
+        height: auto;
+    }
     .email_container{
         padding: 5%;
     }
@@ -147,13 +162,33 @@ animation: animate .5s steps(4) infinite;
     .btn_container{
         display: flex;
         justify-content: left;
-        margin: 2vh 0;
-        margin-top: 5rem;
+        margin: 4rem 0;
+        margin-top: 3rem;
     }
     .btn{
         padding: .5rem 2rem;
       }
     input{
         margin-bottom: 2vh ;
+    }
+
+    .message_container{
+        width: auto;
+        padding: 2rem 1rem;
+        padding-top: 35%;
+        h1{
+            font-size: 60px;
+        }
+        p{
+            padding: 1rem 0;
+            padding-left: 0;
+            font-size: 16px;
+            color: var(--textNormal);
+            margin: 0;
+        }
+        a{
+            margin-left: 0;
+    
+        }
     }
   }

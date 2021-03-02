@@ -16,7 +16,8 @@
   }
 
 .component_title{
-  font-size: 2rem;
+    font-size: 70px;
+    font-weight: 700;
 }
 
 .img {
@@ -99,6 +100,12 @@
     left: 0;
     right: auto;
     width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .component_title{
+      font-size: 60px;
+    }
   }
 
   @media (max-width: 600px) {

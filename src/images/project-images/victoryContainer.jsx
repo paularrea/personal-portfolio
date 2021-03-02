@@ -48,20 +48,18 @@ function VictoryComponent() {
       <div className={style.description}>
         <h1>About the project</h1>
         <p>
-          InnoVision Medical is a professional and innovative company
-          specialized in producing medical devices and personal protective
-          equipment.
+          Static website for a Wholesale supplier who is based on B2B
+          business models on the Swiss market.
         </p>
         <br />
         <h1>Challenge and technologies</h1>
         <p>
-          Design and structure of the Innovision Medical website. The website
-          design is clear and tidy, focusing on Innovision key information and
-          principal products. Working closely with the Innovision team adding
-          additional sections to improving the website. Developed with{" "}
-          <span className={style.bold}>React Hooks</span> styled with{" "}
-          <span className={style.bold}>CSS</span> and{" "}
-          <span className={style.bold}>Bootstrap</span>.
+          Implementation of the page layouts of a static site using{" "}
+          <span className={style.bold}>GatsbyJS</span> and styled with{" "}
+          <span className={style.bold}>SASS</span>. Working closely with the IT team and the UX/UI designer we worked with{" "}
+          <span className={style.bold}>Adobe XD </span>
+          for the design and creation of a prototype of the user experience for
+          the site which has helped me to develop the project in a much faster, more comfortable and structured way.
         </p>
         <Link className={style.link} to="/#projects">
           Back to projects
