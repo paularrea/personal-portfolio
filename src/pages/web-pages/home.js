@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <div id="home" className={styles.container}>
       <SEO
-      title="home page"
       description="Portfolio website of the frontend web developer Pau Larrea, with
        all the available material (projects, contact, cv...)."/>
       <div className={styles.intro}>

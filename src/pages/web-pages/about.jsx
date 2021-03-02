@@ -45,7 +45,6 @@ const About = () => {
   return (
     <div id="about" className={style.about_container}>
       <SEO
-        title="About Pau Larrea"
         description="Hi I am Pau, a frontend developer passionate about building
             beautiful and intuitive designs that improves people's lives. While
             I'm not coding or pushing pixels, you'll find me surfing or

@@ -63,7 +63,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className={styles.gallery_container}>
-            <SEO title="Projects Pau Larrea" description="List of projects I've been involved with or I develop myself. Check them out!"/>
+            <SEO title="Projects" description="List of projects I've been involved with or I develop myself. Check them out!"/>
       <h1 className={styles.component_title}>Work</h1>
       <Container>
         <Row>{projects}</Row>
